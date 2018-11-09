@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="zh-cn" xml:lang="zh-cn">
+<head>
+    <title>训练2</title>
+    <link rel="shortcut icon" href="http://10.64.17.119/moodle/theme/image.php/boost/theme/1516321044/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 训练2" />
+<link rel="stylesheet" type="text/css" href="http://10.64.17.119/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://10.64.17.119/moodle/theme/styles.php/boost/1516321044/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/10.64.17.119\/moodle","sesskey":"YCsdzE0XyT","loadingicon":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/loading_small","themerev":"1516321044","slasharguments":1,"theme":"boost","jsrev":"1516321068","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?m\/1516321068\/","combine":true,"comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1516321068\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1516321068\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz safari dir-ltr lang-zh_cn yui-skin-sam yui3-skin-sam 10-64-17-119--moodle pagelayout-incourse course-2 context-589 cmid-10 category-3 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳到主要内容</a>
+</div><script type="text/javascript" src="http://10.64.17.119/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1516321068/mcore-min.js"></script><script type="text/javascript" src="http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">&#9776;</span><span class="sr-only">展开</span></button>
+            </div>
+    
+            <a href="http://10.64.17.119/moodle" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">MOODLE</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1"data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar"role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">201608060208林金磊</span><span class="avatars"><span class="avatar current"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/u/f2" alt="201608060208林金磊的头像" title="201608060208林金磊的头像" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu"data-rel="menu-content"aria-labelledby="action-menu-toggle-1"role="menu"data-align="tr-br" aria-labelledby="dropdown-1">
+            <a href="http://10.64.17.119/moodle/my/" class="dropdown-item menu-action" role="menuitem"data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/course" />
+<span class="menu-action-text" id="actionmenuaction-1">个人主页</span></a><div class="dropdown-divider"></div><a href="http://10.64.17.119/moodle/user/profile.php?id=1361" class="dropdown-item menu-action" role="menuitem"data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/user" />
+<span class="menu-action-text" id="actionmenuaction-2">个人档案</span></a><a href="http://10.64.17.119/moodle/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem"data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/grades" />
+<span class="menu-action-text" id="actionmenuaction-3">成绩</span></a><a href="http://10.64.17.119/moodle/message/index.php" class="dropdown-item menu-action" role="menuitem"data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/message" />
+<span class="menu-action-text" id="actionmenuaction-4">消息</span></a><a href="http://10.64.17.119/moodle/user/preferences.php" class="dropdown-item menu-action" role="menuitem"data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/preferences" />
+<span class="menu-action-text" id="actionmenuaction-5">使用偏好</span></a><div class="dropdown-divider"></div><a href="http://10.64.17.119/moodle/login/logout.php?sesskey=YCsdzE0XyT" class="dropdown-item menu-action" role="menuitem"data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/a/logout" />
+<span class="menu-action-text" id="actionmenuaction-6">退出</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="1361"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5af24e5584be95af24e557b30e12"
+        aria-haspopup="true"
+        aria-label="显示没有新消息的消息窗口"
+        tabindex="0">
+                <img class="icon smallicon" alt=" 消息菜单开关 " title=" 消息菜单开关 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/message" />
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5af24e5584be95af24e557b30e12"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">消息</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="http://10.64.17.119/moodle/message/index.php?contactsfirst=1">新消息
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    role="button"
+                    title="全部标为已读"
+                    data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" 全部标为已读 " title=" 全部标为已读 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/markasread" /></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        全部标为已读
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="http://10.64.17.119/moodle/message/edit.php?id=1361"
+                    title="信息偏好">
+                    <img class="icon smallicon" alt=" 信息偏好 " title=" 信息偏好 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/settings" />
+                </a>
+
+    <div class="hover-tooltip">
+        信息偏好
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">没有新消息</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://10.64.17.119/moodle/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">查看所有</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="1361"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5af24e55857cb5af24e557b30e13"
+        aria-haspopup="true"
+        aria-label="显示没有新通知的通知窗口"
+        tabindex="0">
+                <img class="icon smallicon" alt=" 通知菜单开关 " title=" 通知菜单开关 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/notifications" />
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5af24e55857cb5af24e557b30e13"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">通知</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    title="全部标为已读"
+                    data-action="mark-all-read"
+                    role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" 全部标为已读 " title=" 全部标为已读 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/markasread" /></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        全部标为已读
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="http://10.64.17.119/moodle/message/notificationpreferences.php?userid=1361"
+                    title="通知偏好">
+                    <img class="icon smallicon" alt=" 通知偏好 " title=" 通知偏好 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/settings" />
+                </a>
+
+    <div class="hover-tooltip">
+        通知偏好
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">您没有通知</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://10.64.17.119/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">查看所有</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                <span class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5af24e558641b5af24e557b30e15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        简体中文 ‎(zh_cn)‎
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5af24e558641b5af24e557b30e15">
+                <a class="dropdown-item" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676&amp;showall=1&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676&amp;showall=1&amp;lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a>
+    </div>
+</span>
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>数字系统实验</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/my/" >个人主页</a></li>
+                <li class="breadcrumb-item">我的课程</li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/course/view.php?id=2" title="数字系统实验">数字系统实验</a></li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/course/view.php?id=2#section-4" >第二次课</a></li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/mod/quiz/view.php?id=10" title="测验">训练2</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">开始时间</th><td class="cell">2018年03月22日 星期四 14:43</td></tr><tr><th class="cell" scope="row">状态</th><td class="cell">完成</td></tr><tr><th class="cell" scope="row">完成于</th><td class="cell">2018年03月22日 星期四 16:05</td></tr><tr><th class="cell" scope="row">耗时</th><td class="cell">1 小时 22 分钟</td></tr><tr><th class="cell" scope="row">成绩</th><td class="cell"><b>50.00</b>/满分50.00 (<b>100</b>%)</td></tr></tbody></table><form action="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676&amp;showall=1" method="post" class="questionflagsaveform"><div><div id="q26" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">1</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:26_:flagged" value="0" /><input type="checkbox" id="q24675:26_:flaggedcheckbox" name="q24675:26_:flagged" value="1" /><input type="hidden" value="qaid=758111&amp;qubaid=24675&amp;qid=124&amp;slot=26&amp;checksum=441d90510968bb60eb0aaae8f2d2429b&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:26_:flaggedlabel" for="q24675:26_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:26_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:26_:sequencecheck" value="3" /><div class="qtext"><p>在波形仿真时如果要观察自己编写的VHDL代码的内部信号，可以选择下图中的哪一项</p><p><img width="221" height="194" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/26/124/6.png"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:26_answer" disabled="disabled" value="0" id="q24675:26_answer0" /><label for="q24675:26_answer0" class="m-l-1">a. <span lang="EN-US">Pins:input</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:26_answer" disabled="disabled" value="1" id="q24675:26_answer1" checked="checked" /><label for="q24675:26_answer1" class="m-l-1">b. <span lang="EN-US">Registers:pre-synthesis</span></label> </div>
+<div class="r0"><input type="radio" name="q24675:26_answer" disabled="disabled" value="2" id="q24675:26_answer2" /><label for="q24675:26_answer2" class="m-l-1">c. <span lang="EN-US">Pins:output<span id="selectionBoundary_1487811095978_7885359394369651">﻿</span></span></label> </div>
+<div class="r1"><input type="radio" name="q24675:26_answer" disabled="disabled" value="3" id="q24675:26_answer3" /><label for="q24675:26_answer3" class="m-l-1">d. <span lang="EN-US">pins:all</span></label> </div>
+</div></div></div></div></div><div id="q13" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">2</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:13_:flagged" value="0" /><input type="checkbox" id="q24675:13_:flaggedcheckbox" name="q24675:13_:flagged" value="1" /><input type="hidden" value="qaid=758098&amp;qubaid=24675&amp;qid=31&amp;slot=13&amp;checksum=5ef9c5f9226f388675e454a2257da654&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:13_:flaggedlabel" for="q24675:13_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:13_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:13_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些是属于FPGA体系结构中的部分<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:13_choice0" disabled="disabled" value="1" id="q24675:13_choice0" checked="checked" /><label for="q24675:13_choice0" class="m-l-1">a. 用户可选IO</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:13_choice1" disabled="disabled" value="1" id="q24675:13_choice1" checked="checked" /><label for="q24675:13_choice1" class="m-l-1">b. 锁相环</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:13_choice2" disabled="disabled" value="1" id="q24675:13_choice2" checked="checked" /><label for="q24675:13_choice2" class="m-l-1">c. 逻辑单元</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:13_choice3" disabled="disabled" value="1" id="q24675:13_choice3" checked="checked" /><label for="q24675:13_choice3" class="m-l-1">d. 嵌入式存储器</label> </div>
+</div></div></div></div></div><div id="q9" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">3</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:9_:flagged" value="0" /><input type="checkbox" id="q24675:9_:flaggedcheckbox" name="q24675:9_:flagged" value="1" /><input type="hidden" value="qaid=758094&amp;qubaid=24675&amp;qid=46&amp;slot=9&amp;checksum=fd7c7223106909276c8980da86648f4c&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:9_:flaggedlabel" for="q24675:9_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:9_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:9_:sequencecheck" value="3" /><div class="qtext"><p>下列那种器件具有数据寄存的功能<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:9_answer" disabled="disabled" value="0" id="q24675:9_answer0" /><label for="q24675:9_answer0" class="m-l-1">a. 编码器</label> </div>
+<div class="r1"><input type="radio" name="q24675:9_answer" disabled="disabled" value="1" id="q24675:9_answer1" /><label for="q24675:9_answer1" class="m-l-1">b. 比较器</label> </div>
+<div class="r0"><input type="radio" name="q24675:9_answer" disabled="disabled" value="2" id="q24675:9_answer2" /><label for="q24675:9_answer2" class="m-l-1">c. 译码器</label> </div>
+<div class="r1"><input type="radio" name="q24675:9_answer" disabled="disabled" value="3" id="q24675:9_answer3" checked="checked" /><label for="q24675:9_answer3" class="m-l-1">d. D触发器</label> </div>
+</div></div></div></div></div><div id="q15" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">4</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:15_:flagged" value="0" /><input type="checkbox" id="q24675:15_:flaggedcheckbox" name="q24675:15_:flagged" value="1" /><input type="hidden" value="qaid=758100&amp;qubaid=24675&amp;qid=35&amp;slot=15&amp;checksum=c32acf619dda73b585445d25a6b51540&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:15_:flaggedlabel" for="q24675:15_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:15_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:15_:sequencecheck" value="3" /><div class="qtext"><p>本学期使用的FPGA电路板中主芯片的family类型为<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:15_answer" disabled="disabled" value="0" id="q24675:15_answer0" /><label for="q24675:15_answer0" class="m-l-1">a. &nbsp;cyclone</label> </div>
+<div class="r1"><input type="radio" name="q24675:15_answer" disabled="disabled" value="1" id="q24675:15_answer1" checked="checked" /><label for="q24675:15_answer1" class="m-l-1">b. <span lang="EN-US">cycloneII</span></label> </div>
+<div class="r0"><input type="radio" name="q24675:15_answer" disabled="disabled" value="2" id="q24675:15_answer2" /><label for="q24675:15_answer2" class="m-l-1">c. <span lang="EN-US">cycloneIII</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:15_answer" disabled="disabled" value="3" id="q24675:15_answer3" /><label for="q24675:15_answer3" class="m-l-1">d. <span lang="EN-US">flex10K</span></label> </div>
+</div></div></div></div></div><div id="q43" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">5</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:43_:flagged" value="0" /><input type="checkbox" id="q24675:43_:flaggedcheckbox" name="q24675:43_:flagged" value="1" /><input type="hidden" value="qaid=758128&amp;qubaid=24675&amp;qid=101&amp;slot=43&amp;checksum=3ee52589ea587749e61581cea67a1e1c&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:43_:flaggedlabel" for="q24675:43_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:43_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:43_:sequencecheck" value="3" /><div class="qtext"><p><img width="908" height="656" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/43/101/%E5%9B%BE%E7%89%871.jpg"></p><p>图中是FPGA实验板的实物图，哪些引脚可以做为数码管段选信号的输入<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:43_choice0" disabled="disabled" value="1" id="q24675:43_choice0" checked="checked" /><label for="q24675:43_choice0" class="m-l-1">a. 137</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:43_choice1" disabled="disabled" value="1" id="q24675:43_choice1" /><label for="q24675:43_choice1" class="m-l-1">b. 132</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:43_choice2" disabled="disabled" value="1" id="q24675:43_choice2" /><label for="q24675:43_choice2" class="m-l-1">c. 138</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:43_choice3" disabled="disabled" value="1" id="q24675:43_choice3" checked="checked" /><label for="q24675:43_choice3" class="m-l-1">d. 133</label> </div>
+</div></div></div></div></div><div id="q2" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">6</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:2_:flagged" value="0" /><input type="checkbox" id="q24675:2_:flaggedcheckbox" name="q24675:2_:flagged" value="1" /><input type="hidden" value="qaid=758087&amp;qubaid=24675&amp;qid=39&amp;slot=2&amp;checksum=33b5e2a6520047264ab5d56c29a73bc5&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:2_:flaggedlabel" for="q24675:2_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:2_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:2_:sequencecheck" value="3" /><div class="qtext"><p>FPGA实验板上按键开关按下时，对应管脚的值为<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:2_answer" disabled="disabled" value="0" id="q24675:2_answer0" /><label for="q24675:2_answer0" class="m-l-1">a. 1</label> </div>
+<div class="r1"><input type="radio" name="q24675:2_answer" disabled="disabled" value="1" id="q24675:2_answer1" checked="checked" /><label for="q24675:2_answer1" class="m-l-1">b. 0</label> </div>
+<div class="r0"><input type="radio" name="q24675:2_answer" disabled="disabled" value="2" id="q24675:2_answer2" /><label for="q24675:2_answer2" class="m-l-1">c. 随机</label> </div>
+</div></div></div></div></div><div id="q34" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">7</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:34_:flagged" value="0" /><input type="checkbox" id="q24675:34_:flaggedcheckbox" name="q24675:34_:flagged" value="1" /><input type="hidden" value="qaid=758119&amp;qubaid=24675&amp;qid=83&amp;slot=34&amp;checksum=388e460e86fc38f07db5b249ef8af16f&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:34_:flaggedlabel" for="q24675:34_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:34_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:34_:sequencecheck" value="3" /><div class="qtext"><p>quartus软件新建工程文件的后缀名为<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:34_answer" disabled="disabled" value="0" id="q24675:34_answer0" /><label for="q24675:34_answer0" class="m-l-1">a. .bsf&nbsp;</label> </div>
+<div class="r1"><input type="radio" name="q24675:34_answer" disabled="disabled" value="1" id="q24675:34_answer1" /><label for="q24675:34_answer1" class="m-l-1">b. .sof</label> </div>
+<div class="r0"><input type="radio" name="q24675:34_answer" disabled="disabled" value="2" id="q24675:34_answer2" /><label for="q24675:34_answer2" class="m-l-1">c. .vwf</label> </div>
+<div class="r1"><input type="radio" name="q24675:34_answer" disabled="disabled" value="3" id="q24675:34_answer3" checked="checked" /><label for="q24675:34_answer3" class="m-l-1">d. .qpf</label> </div>
+</div></div></div></div></div><div id="q50" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">8</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:50_:flagged" value="0" /><input type="checkbox" id="q24675:50_:flaggedcheckbox" name="q24675:50_:flagged" value="1" /><input type="hidden" value="qaid=758135&amp;qubaid=24675&amp;qid=115&amp;slot=50&amp;checksum=a0832df25c78bc1fb60f9fd247966c72&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:50_:flaggedlabel" for="q24675:50_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:50_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:50_:sequencecheck" value="3" /><div class="qtext"><p><img width="406" height="122" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/50/115/1.png">在下载时碰到图中情况无法下载的原因可能有<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:50_choice0" disabled="disabled" value="1" id="q24675:50_choice0" checked="checked" /><label for="q24675:50_choice0" class="m-l-1">a. <span lang="EN-US">USB</span>线有问题</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:50_choice1" disabled="disabled" value="1" id="q24675:50_choice1" checked="checked" /><label for="q24675:50_choice1" class="m-l-1">b. 驱动程序没装好</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:50_choice2" disabled="disabled" value="1" id="q24675:50_choice2" /><label for="q24675:50_choice2" class="m-l-1">c. 芯片类型选择错误</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:50_choice3" disabled="disabled" value="1" id="q24675:50_choice3" checked="checked" /><label for="q24675:50_choice3" class="m-l-1">d. <span lang="EN-US">USB</span>接头接触不良</label> </div>
+</div></div></div></div></div><div id="q28" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">9</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:28_:flagged" value="0" /><input type="checkbox" id="q24675:28_:flaggedcheckbox" name="q24675:28_:flagged" value="1" /><input type="hidden" value="qaid=758113&amp;qubaid=24675&amp;qid=127&amp;slot=28&amp;checksum=2da7cf8a8761b280e4a2c0b9934dcc01&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:28_:flaggedlabel" for="q24675:28_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:28_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:28_:sequencecheck" value="3" /><div class="qtext"><p><span lang="EN-US"><img width="578" height="374" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/28/127/2.jpg">.</span>图中所示的模四计数器在几个时钟周期里完成一次循环过程<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:28_answer" disabled="disabled" value="0" id="q24675:28_answer0" /><label for="q24675:28_answer0" class="m-l-1">a. 3</label> </div>
+<div class="r1"><input type="radio" name="q24675:28_answer" disabled="disabled" value="1" id="q24675:28_answer1" /><label for="q24675:28_answer1" class="m-l-1">b. 4</label> </div>
+<div class="r0"><input type="radio" name="q24675:28_answer" disabled="disabled" value="2" id="q24675:28_answer2" /><label for="q24675:28_answer2" class="m-l-1">c. 6</label> </div>
+<div class="r1"><input type="radio" name="q24675:28_answer" disabled="disabled" value="3" id="q24675:28_answer3" checked="checked" /><label for="q24675:28_answer3" class="m-l-1">d. 5</label> </div>
+</div></div></div></div></div><div id="q18" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">10</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:18_:flagged" value="0" /><input type="checkbox" id="q24675:18_:flaggedcheckbox" name="q24675:18_:flagged" value="1" /><input type="hidden" value="qaid=758103&amp;qubaid=24675&amp;qid=38&amp;slot=18&amp;checksum=5c741bc4b0dd59e341aa387513bbbdc6&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:18_:flaggedlabel" for="q24675:18_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:18_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:18_:sequencecheck" value="3" /><div class="qtext"><p>FPGA实验板上拨码开关拨到上面位置时，对应管脚的值为<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:18_answer" disabled="disabled" value="0" id="q24675:18_answer0" /><label for="q24675:18_answer0" class="m-l-1">a. 0</label> </div>
+<div class="r1"><input type="radio" name="q24675:18_answer" disabled="disabled" value="1" id="q24675:18_answer1" /><label for="q24675:18_answer1" class="m-l-1">b. 随机数值</label> </div>
+<div class="r0"><input type="radio" name="q24675:18_answer" disabled="disabled" value="2" id="q24675:18_answer2" checked="checked" /><label for="q24675:18_answer2" class="m-l-1">c. 1</label> </div>
+</div></div></div></div></div><div id="q40" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">11</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:40_:flagged" value="0" /><input type="checkbox" id="q24675:40_:flaggedcheckbox" name="q24675:40_:flagged" value="1" /><input type="hidden" value="qaid=758125&amp;qubaid=24675&amp;qid=89&amp;slot=40&amp;checksum=8c38968c2400cbb6ee0c93c1751a671b&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:40_:flaggedlabel" for="q24675:40_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:40_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:40_:sequencecheck" value="3" /><div class="qtext"><p>下列哪一种是对总线的正确命名方式<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:40_answer" disabled="disabled" value="0" id="q24675:40_answer0" /><label for="q24675:40_answer0" class="m-l-1">a. q[1.0]</label> </div>
+<div class="r1"><input type="radio" name="q24675:40_answer" disabled="disabled" value="1" id="q24675:40_answer1" /><label for="q24675:40_answer1" class="m-l-1">b. <span lang="EN-US">&nbsp;q(1..0)</span></label> </div>
+<div class="r0"><input type="radio" name="q24675:40_answer" disabled="disabled" value="2" id="q24675:40_answer2" /><label for="q24675:40_answer2" class="m-l-1">c. <span lang="EN-US">&nbsp;q(1.0)</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:40_answer" disabled="disabled" value="3" id="q24675:40_answer3" checked="checked" /><label for="q24675:40_answer3" class="m-l-1">d. q[1..0]</label> </div>
+</div></div></div></div></div><div id="q45" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">12</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:45_:flagged" value="0" /><input type="checkbox" id="q24675:45_:flaggedcheckbox" name="q24675:45_:flagged" value="1" /><input type="hidden" value="qaid=758130&amp;qubaid=24675&amp;qid=108&amp;slot=45&amp;checksum=09f98fa1e6efefb0b93411a7bc647be9&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:45_:flaggedlabel" for="q24675:45_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:45_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:45_:sequencecheck" value="3" /><div class="qtext"><p><img width="905" height="654" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/45/108/1.jpg">
+
+</p><p>图中是<span lang="EN-US">FPGA</span>实验板的实物图，哪些引脚可以在任何情况下做为<span lang="EN-US">led</span>灯输出</p><p>
+
+<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:45_choice0" disabled="disabled" value="1" id="q24675:45_choice0" checked="checked" /><label for="q24675:45_choice0" class="m-l-1">a. 73</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:45_choice1" disabled="disabled" value="1" id="q24675:45_choice1" /><label for="q24675:45_choice1" class="m-l-1">b. 70</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:45_choice2" disabled="disabled" value="1" id="q24675:45_choice2" checked="checked" /><label for="q24675:45_choice2" class="m-l-1">c. 72</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:45_choice3" disabled="disabled" value="1" id="q24675:45_choice3" /><label for="q24675:45_choice3" class="m-l-1">d. 71</label> </div>
+</div></div></div></div></div><div id="q46" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">13</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:46_:flagged" value="0" /><input type="checkbox" id="q24675:46_:flaggedcheckbox" name="q24675:46_:flagged" value="1" /><input type="hidden" value="qaid=758131&amp;qubaid=24675&amp;qid=109&amp;slot=46&amp;checksum=1416639ea0276d8bd7480795fb1aacfe&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:46_:flaggedlabel" for="q24675:46_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:46_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:46_:sequencecheck" value="3" /><div class="qtext"><p><span lang="EN-US">本学期试验中在quartus9.0种用到的</span>仿真类型有几种<span id="selectionBoundary_1487809739224_8142741228561786">﻿</span><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:46_answer" disabled="disabled" value="0" id="q24675:46_answer0" /><label for="q24675:46_answer0" class="m-l-1">a. 1</label> </div>
+<div class="r1"><input type="radio" name="q24675:46_answer" disabled="disabled" value="1" id="q24675:46_answer1" /><label for="q24675:46_answer1" class="m-l-1">b. 4</label> </div>
+<div class="r0"><input type="radio" name="q24675:46_answer" disabled="disabled" value="2" id="q24675:46_answer2" checked="checked" /><label for="q24675:46_answer2" class="m-l-1">c. 2</label> </div>
+<div class="r1"><input type="radio" name="q24675:46_answer" disabled="disabled" value="3" id="q24675:46_answer3" /><label for="q24675:46_answer3" class="m-l-1">d. 3</label> </div>
+</div></div></div></div></div><div id="q38" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">14</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:38_:flagged" value="0" /><input type="checkbox" id="q24675:38_:flaggedcheckbox" name="q24675:38_:flagged" value="1" /><input type="hidden" value="qaid=758123&amp;qubaid=24675&amp;qid=87&amp;slot=38&amp;checksum=a93309d33d5b35fef88ee19b29ba14df&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:38_:flaggedlabel" for="q24675:38_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:38_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:38_:sequencecheck" value="3" /><div class="qtext"><p>计数芯片74161中清零信号clrn在下列哪种情况为有效<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:38_answer" disabled="disabled" value="0" id="q24675:38_answer0" /><label for="q24675:38_answer0" class="m-l-1">a. 1和0随机有效</label> </div>
+<div class="r1"><input type="radio" name="q24675:38_answer" disabled="disabled" value="1" id="q24675:38_answer1" /><label for="q24675:38_answer1" class="m-l-1">b. 1和0都有效</label> </div>
+<div class="r0"><input type="radio" name="q24675:38_answer" disabled="disabled" value="2" id="q24675:38_answer2" /><label for="q24675:38_answer2" class="m-l-1">c. 1</label> </div>
+<div class="r1"><input type="radio" name="q24675:38_answer" disabled="disabled" value="3" id="q24675:38_answer3" checked="checked" /><label for="q24675:38_answer3" class="m-l-1">d. 0</label> </div>
+</div></div></div></div></div><div id="q49" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">15</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:49_:flagged" value="0" /><input type="checkbox" id="q24675:49_:flaggedcheckbox" name="q24675:49_:flagged" value="1" /><input type="hidden" value="qaid=758134&amp;qubaid=24675&amp;qid=114&amp;slot=49&amp;checksum=4d9b7279e996674ac47bd43d8e639b5d&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:49_:flaggedlabel" for="q24675:49_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:49_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:49_:sequencecheck" value="3" /><div class="qtext"><p><span lang="EN-US">在本学期使用的DDA-3型FPGA</span>实验板上，数码管位选信号在下列哪种情况下有效 <br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:49_answer" disabled="disabled" value="0" id="q24675:49_answer0" checked="checked" /><label for="q24675:49_answer0" class="m-l-1">a. 为0时</label> </div>
+<div class="r1"><input type="radio" name="q24675:49_answer" disabled="disabled" value="1" id="q24675:49_answer1" /><label for="q24675:49_answer1" class="m-l-1">b. 1和0随机有效</label> </div>
+<div class="r0"><input type="radio" name="q24675:49_answer" disabled="disabled" value="2" id="q24675:49_answer2" /><label for="q24675:49_answer2" class="m-l-1">c. <span lang="EN-US">1</span>和<span lang="EN-US">0</span>都有效</label> </div>
+<div class="r1"><input type="radio" name="q24675:49_answer" disabled="disabled" value="3" id="q24675:49_answer3" /><label for="q24675:49_answer3" class="m-l-1">d. 为1时</label> </div>
+</div></div></div></div></div><div id="q33" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">16</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:33_:flagged" value="0" /><input type="checkbox" id="q24675:33_:flaggedcheckbox" name="q24675:33_:flagged" value="1" /><input type="hidden" value="qaid=758118&amp;qubaid=24675&amp;qid=82&amp;slot=33&amp;checksum=6d0d4362ae5eee5d3ec55a746b170736&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:33_:flaggedlabel" for="q24675:33_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:33_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:33_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些模块属于三位数码管显示电路中的子模块<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:33_choice0" disabled="disabled" value="1" id="q24675:33_choice0" /><label for="q24675:33_choice0" class="m-l-1">a. 38译码器</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:33_choice1" disabled="disabled" value="1" id="q24675:33_choice1" checked="checked" /><label for="q24675:33_choice1" class="m-l-1">b. 23译码器</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:33_choice2" disabled="disabled" value="1" id="q24675:33_choice2" checked="checked" /><label for="q24675:33_choice2" class="m-l-1">c. 三选一多路选择器</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:33_choice3" disabled="disabled" value="1" id="q24675:33_choice3" checked="checked" /><label for="q24675:33_choice3" class="m-l-1">d. 模四计数器</label> </div>
+</div></div></div></div></div><div id="q4" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">17</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:4_:flagged" value="0" /><input type="checkbox" id="q24675:4_:flaggedcheckbox" name="q24675:4_:flagged" value="1" /><input type="hidden" value="qaid=758089&amp;qubaid=24675&amp;qid=41&amp;slot=4&amp;checksum=f2399241df9f7d70af074e9b58c33356&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:4_:flaggedlabel" for="q24675:4_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:4_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:4_:sequencecheck" value="3" /><div class="qtext"><p>FPGA实验板上有几种不同的时钟频率能做为输入<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:4_answer" disabled="disabled" value="0" id="q24675:4_answer0" /><label for="q24675:4_answer0" class="m-l-1">a. 16</label> </div>
+<div class="r1"><input type="radio" name="q24675:4_answer" disabled="disabled" value="1" id="q24675:4_answer1" checked="checked" /><label for="q24675:4_answer1" class="m-l-1">b. 32</label> </div>
+<div class="r0"><input type="radio" name="q24675:4_answer" disabled="disabled" value="2" id="q24675:4_answer2" /><label for="q24675:4_answer2" class="m-l-1">c. 4</label> </div>
+<div class="r1"><input type="radio" name="q24675:4_answer" disabled="disabled" value="3" id="q24675:4_answer3" /><label for="q24675:4_answer3" class="m-l-1">d. 8</label> </div>
+</div></div></div></div></div><div id="q3" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">18</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:3_:flagged" value="0" /><input type="checkbox" id="q24675:3_:flaggedcheckbox" name="q24675:3_:flagged" value="1" /><input type="hidden" value="qaid=758088&amp;qubaid=24675&amp;qid=40&amp;slot=3&amp;checksum=6c7b34101d9c7723e8ece5d6a9527e3a&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:3_:flaggedlabel" for="q24675:3_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:3_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:3_:sequencecheck" value="3" /><div class="qtext"><p>FPGA实验板上LED灯亮的时候，对应管脚的逻辑电平为<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:3_answer" disabled="disabled" value="0" id="q24675:3_answer0" /><label for="q24675:3_answer0" class="m-l-1">a. 0</label> </div>
+<div class="r1"><input type="radio" name="q24675:3_answer" disabled="disabled" value="1" id="q24675:3_answer1" checked="checked" /><label for="q24675:3_answer1" class="m-l-1">b. 1</label> </div>
+<div class="r0"><input type="radio" name="q24675:3_answer" disabled="disabled" value="2" id="q24675:3_answer2" /><label for="q24675:3_answer2" class="m-l-1">c. 随机</label> </div>
+</div></div></div></div></div><div id="q44" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">19</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:44_:flagged" value="0" /><input type="checkbox" id="q24675:44_:flaggedcheckbox" name="q24675:44_:flagged" value="1" /><input type="hidden" value="qaid=758129&amp;qubaid=24675&amp;qid=106&amp;slot=44&amp;checksum=d8a3e0749d2430045e3406efd246cb40&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:44_:flaggedlabel" for="q24675:44_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:44_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:44_:sequencecheck" value="3" /><div class="qtext"><p>下图是FPGA实验板的实物图，哪些引脚可以做为led灯输出<br></p><p><img width="905" height="654" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/44/106/1.jpg"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:44_answer" disabled="disabled" value="0" id="q24675:44_answer0" /><label for="q24675:44_answer0" class="m-l-1">a. 134</label> </div>
+<div class="r1"><input type="radio" name="q24675:44_answer" disabled="disabled" value="1" id="q24675:44_answer1" checked="checked" /><label for="q24675:44_answer1" class="m-l-1">b. 92</label> </div>
+<div class="r0"><input type="radio" name="q24675:44_answer" disabled="disabled" value="2" id="q24675:44_answer2" /><label for="q24675:44_answer2" class="m-l-1">c. 133</label> </div>
+<div class="r1"><input type="radio" name="q24675:44_answer" disabled="disabled" value="3" id="q24675:44_answer3" /><label for="q24675:44_answer3" class="m-l-1">d. 91</label> </div>
+</div></div></div></div></div><div id="q20" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">20</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:20_:flagged" value="0" /><input type="checkbox" id="q24675:20_:flaggedcheckbox" name="q24675:20_:flagged" value="1" /><input type="hidden" value="qaid=758105&amp;qubaid=24675&amp;qid=79&amp;slot=20&amp;checksum=18c3bc9cdf594a006f2393e6b7c4f270&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:20_:flaggedlabel" for="q24675:20_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:20_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:20_:sequencecheck" value="3" /><div class="qtext"><p>FPGA实验板上使用的数码管属于下列哪一种数码管<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:20_answer" disabled="disabled" value="0" id="q24675:20_answer0" /><label for="q24675:20_answer0" class="m-l-1">a. 共基级数码管</label> </div>
+<div class="r1"><input type="radio" name="q24675:20_answer" disabled="disabled" value="1" id="q24675:20_answer1" /><label for="q24675:20_answer1" class="m-l-1">b. 共发射级数码管</label> </div>
+<div class="r0"><input type="radio" name="q24675:20_answer" disabled="disabled" value="2" id="q24675:20_answer2" checked="checked" /><label for="q24675:20_answer2" class="m-l-1">c. &nbsp;共阴极数码管</label> </div>
+<div class="r1"><input type="radio" name="q24675:20_answer" disabled="disabled" value="3" id="q24675:20_answer3" /><label for="q24675:20_answer3" class="m-l-1">d. 共阳极数码管</label> </div>
+</div></div></div></div></div><div id="q1" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">21</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:1_:flagged" value="0" /><input type="checkbox" id="q24675:1_:flaggedcheckbox" name="q24675:1_:flagged" value="1" /><input type="hidden" value="qaid=758086&amp;qubaid=24675&amp;qid=15&amp;slot=1&amp;checksum=110978f009c0febe56ef4a6370b54bf1&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:1_:flaggedlabel" for="q24675:1_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:1_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:1_:sequencecheck" value="3" /><div class="qtext"><p></p><p><span lang="EN-US">&nbsp;</span><!--[endif]-->关于<span lang="EN-US">EDA </span>下列说法正确的是<span lang="EN-US"></span></p><br><p></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:1_choice0" disabled="disabled" value="1" id="q24675:1_choice0" checked="checked" /><label for="q24675:1_choice0" class="m-l-1">a. EDA技术是 在20世纪60年代中期从计算机辅助设计（CAD）、计算机辅助制造（CAM）、计算机辅助测试（CAT）和计算机辅助工程（CAE）的概念发展而来的。</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:1_choice1" disabled="disabled" value="1" id="q24675:1_choice1" checked="checked" /><label for="q24675:1_choice1" class="m-l-1">b. 在电子技术设计领域，可编程逻辑器件（如CPLD、FPGA）的应用，已得到广泛的普及，这些器件为数字系统的设计带来了极大的灵活性。</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:1_choice2" disabled="disabled" value="1" id="q24675:1_choice2" checked="checked" /><label for="q24675:1_choice2" class="m-l-1">c. EDA技术就是以计算机为工具，设计者在EDA软件平台上，用硬件描述语言VerilogHDL完成设计文件，然后由计算机自动地完成逻辑编译、化简、分割、综合、优化、布局、布线和仿真，直至对于特定目标芯片的适配编译、逻辑映射和编程下载等工作。</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:1_choice3" disabled="disabled" value="1" id="q24675:1_choice3" checked="checked" /><label for="q24675:1_choice3" class="m-l-1">d. EDA是电子设计自动化（Electronics Design Automation）的缩写</label> </div>
+</div></div></div></div></div><div id="q39" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">22</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:39_:flagged" value="0" /><input type="checkbox" id="q24675:39_:flaggedcheckbox" name="q24675:39_:flagged" value="1" /><input type="hidden" value="qaid=758124&amp;qubaid=24675&amp;qid=88&amp;slot=39&amp;checksum=32b699f05952744f55b9aeba4ae62479&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:39_:flaggedlabel" for="q24675:39_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:39_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:39_:sequencecheck" value="3" /><div class="qtext"><p>计数芯片<span lang="EN-US">74161</span>能够改装成最大为多少进制的计数器<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:39_answer" disabled="disabled" value="0" id="q24675:39_answer0" /><label for="q24675:39_answer0" class="m-l-1">a. 15</label> </div>
+<div class="r1"><input type="radio" name="q24675:39_answer" disabled="disabled" value="1" id="q24675:39_answer1" checked="checked" /><label for="q24675:39_answer1" class="m-l-1">b. 16</label> </div>
+<div class="r0"><input type="radio" name="q24675:39_answer" disabled="disabled" value="2" id="q24675:39_answer2" /><label for="q24675:39_answer2" class="m-l-1">c. 8</label> </div>
+<div class="r1"><input type="radio" name="q24675:39_answer" disabled="disabled" value="3" id="q24675:39_answer3" /><label for="q24675:39_answer3" class="m-l-1">d. 4</label> </div>
+</div></div></div></div></div><div id="q16" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">23</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:16_:flagged" value="0" /><input type="checkbox" id="q24675:16_:flaggedcheckbox" name="q24675:16_:flagged" value="1" /><input type="hidden" value="qaid=758101&amp;qubaid=24675&amp;qid=36&amp;slot=16&amp;checksum=eed68043b4f38f2a75b2aa197b9dfeb3&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:16_:flaggedlabel" for="q24675:16_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:16_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:16_:sequencecheck" value="3" /><div class="qtext"><p>本学期使用的FPGA电路板上的主芯片是下列那一款<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:16_answer" disabled="disabled" value="0" id="q24675:16_answer0" /><label for="q24675:16_answer0" class="m-l-1">a. EP2C5AT144A7</label> </div>
+<div class="r1"><input type="radio" name="q24675:16_answer" disabled="disabled" value="1" id="q24675:16_answer1" checked="checked" /><label for="q24675:16_answer1" class="m-l-1">b. EP2C5T144C8N</label> </div>
+<div class="r0"><input type="radio" name="q24675:16_answer" disabled="disabled" value="2" id="q24675:16_answer2" /><label for="q24675:16_answer2" class="m-l-1">c. EP2C8F256C6</label> </div>
+<div class="r1"><input type="radio" name="q24675:16_answer" disabled="disabled" value="3" id="q24675:16_answer3" /><label for="q24675:16_answer3" class="m-l-1">d. EP2C5F256C6</label> </div>
+</div></div></div></div></div><div id="q42" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">24</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:42_:flagged" value="0" /><input type="checkbox" id="q24675:42_:flaggedcheckbox" name="q24675:42_:flagged" value="1" /><input type="hidden" value="qaid=758127&amp;qubaid=24675&amp;qid=91&amp;slot=42&amp;checksum=d93e666926349edc785de275605b2b94&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:42_:flaggedlabel" for="q24675:42_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:42_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:42_:sequencecheck" value="3" /><div class="qtext"><img src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/42/91/%E5%9B%BE%E7%89%871.jpg" alt="" width="908" height="656" role="presentation" class="atto_image_button_text-bottom"><p>上图中哪些引脚可以做为数码管位选信号的输入</p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:42_choice0" disabled="disabled" value="1" id="q24675:42_choice0" checked="checked" /><label for="q24675:42_choice0" class="m-l-1">a. 132</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:42_choice1" disabled="disabled" value="1" id="q24675:42_choice1" /><label for="q24675:42_choice1" class="m-l-1">b. 133</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:42_choice2" disabled="disabled" value="1" id="q24675:42_choice2" checked="checked" /><label for="q24675:42_choice2" class="m-l-1">c. 121</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:42_choice3" disabled="disabled" value="1" id="q24675:42_choice3" checked="checked" /><label for="q24675:42_choice3" class="m-l-1">d. 120</label> </div>
+</div></div></div></div></div><div id="q12" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">25</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:12_:flagged" value="0" /><input type="checkbox" id="q24675:12_:flaggedcheckbox" name="q24675:12_:flagged" value="1" /><input type="hidden" value="qaid=758097&amp;qubaid=24675&amp;qid=48&amp;slot=12&amp;checksum=c5fa2c88ce2febd33ba7be8b0a6a11d8&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:12_:flaggedlabel" for="q24675:12_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:12_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:12_:sequencecheck" value="3" /><div class="qtext"><p>下列那些不属于quartus9.0元件库中DFF器件的功能<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:12_choice0" disabled="disabled" value="1" id="q24675:12_choice0" checked="checked" /><label for="q24675:12_choice0" class="m-l-1">a. 数据取反</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:12_choice1" disabled="disabled" value="1" id="q24675:12_choice1" checked="checked" /><label for="q24675:12_choice1" class="m-l-1">b. 加计数</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:12_choice2" disabled="disabled" value="1" id="q24675:12_choice2" checked="checked" /><label for="q24675:12_choice2" class="m-l-1">c. 减计数</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:12_choice3" disabled="disabled" value="1" id="q24675:12_choice3" /><label for="q24675:12_choice3" class="m-l-1">d. 寄存数据</label> </div>
+</div></div></div></div></div><div id="q30" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">26</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:30_:flagged" value="0" /><input type="checkbox" id="q24675:30_:flaggedcheckbox" name="q24675:30_:flagged" value="1" /><input type="hidden" value="qaid=758115&amp;qubaid=24675&amp;qid=129&amp;slot=30&amp;checksum=59769c645137690b2d5cde8a6de1b05d&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:30_:flaggedlabel" for="q24675:30_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:30_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:30_:sequencecheck" value="3" /><div class="qtext"><p>下列说法正确的是<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:30_answer" disabled="disabled" value="0" id="q24675:30_answer0" checked="checked" /><label for="q24675:30_answer0" class="m-l-1">a. <span lang="EN-US">grid siz</span>参数的设置与仿真结果无关，只是便于设置和观察仿真波形</label> </div>
+<div class="r1"><input type="radio" name="q24675:30_answer" disabled="disabled" value="1" id="q24675:30_answer1" /><label for="q24675:30_answer1" class="m-l-1">b. <span lang="EN-US">End time</span>可设置成比时钟信号<span lang="EN-US">clk</span>的周期小</label> </div>
+<div class="r0"><input type="radio" name="q24675:30_answer" disabled="disabled" value="2" id="q24675:30_answer2" /><label for="q24675:30_answer2" class="m-l-1">c. <span lang="EN-US">clk</span>时钟信号占空比必须设置成<span lang="EN-US">50%</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:30_answer" disabled="disabled" value="3" id="q24675:30_answer3" /><label for="q24675:30_answer3" class="m-l-1">d. <span lang="EN-US">grid size</span>必须设置成和时钟信号<span lang="EN-US">clk</span>的周期相等</label> </div>
+</div></div></div></div></div><div id="q29" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">27</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:29_:flagged" value="0" /><input type="checkbox" id="q24675:29_:flaggedcheckbox" name="q24675:29_:flagged" value="1" /><input type="hidden" value="qaid=758114&amp;qubaid=24675&amp;qid=128&amp;slot=29&amp;checksum=42e8bff07d39c298aac5df1e65540ca8&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:29_:flaggedlabel" for="q24675:29_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:29_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:29_:sequencecheck" value="3" /><div class="qtext"><p>下图中点击哪个图标可做为时钟信号<span lang="EN-US">CLK</span>的输入信号激励设置<img width="126" height="216" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/29/128/7.png"></p><p>
+
+<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:29_answer" disabled="disabled" value="0" id="q24675:29_answer0" /><label for="q24675:29_answer0" class="m-l-1">a. B</label> </div>
+<div class="r1"><input type="radio" name="q24675:29_answer" disabled="disabled" value="1" id="q24675:29_answer1" checked="checked" /><label for="q24675:29_answer1" class="m-l-1">b. C</label> </div>
+<div class="r0"><input type="radio" name="q24675:29_answer" disabled="disabled" value="2" id="q24675:29_answer2" /><label for="q24675:29_answer2" class="m-l-1">c. D</label> </div>
+<div class="r1"><input type="radio" name="q24675:29_answer" disabled="disabled" value="3" id="q24675:29_answer3" /><label for="q24675:29_answer3" class="m-l-1">d. A</label> </div>
+</div></div></div></div></div><div id="q41" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">28</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:41_:flagged" value="0" /><input type="checkbox" id="q24675:41_:flaggedcheckbox" name="q24675:41_:flagged" value="1" /><input type="hidden" value="qaid=758126&amp;qubaid=24675&amp;qid=90&amp;slot=41&amp;checksum=fdac9a3ae16ebe4f1d5ef9e3c0aef958&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:41_:flaggedlabel" for="q24675:41_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:41_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:41_:sequencecheck" value="3" /><div class="qtext"><p><br></p><p><img width="908" height="656" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/41/90/%E5%9B%BE%E7%89%871.jpg"></p><p>图中是FPGA实验板的实物图，哪些引脚可以做为CLK时钟信号的输入<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:41_choice0" disabled="disabled" value="1" id="q24675:41_choice0" checked="checked" /><label for="q24675:41_choice0" class="m-l-1">a. 21</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:41_choice1" disabled="disabled" value="1" id="q24675:41_choice1" checked="checked" /><label for="q24675:41_choice1" class="m-l-1">b. 17</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:41_choice2" disabled="disabled" value="1" id="q24675:41_choice2" checked="checked" /><label for="q24675:41_choice2" class="m-l-1">c. 91</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:41_choice3" disabled="disabled" value="1" id="q24675:41_choice3" /><label for="q24675:41_choice3" class="m-l-1">d. 71</label> </div>
+</div></div></div></div></div><div id="q48" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">29</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:48_:flagged" value="0" /><input type="checkbox" id="q24675:48_:flaggedcheckbox" name="q24675:48_:flagged" value="1" /><input type="hidden" value="qaid=758133&amp;qubaid=24675&amp;qid=112&amp;slot=48&amp;checksum=36db6438f24305cada1e0334f3710b40&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:48_:flaggedlabel" for="q24675:48_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:48_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:48_:sequencecheck" value="3" /><div class="qtext"><p>要在实验板上直接观察到模四计数器中<span lang="EN-US">LED</span>灯的亮灭情况，<span lang="EN-US">CLK</span>时钟信号应分配到哪个管脚<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:48_answer" disabled="disabled" value="0" id="q24675:48_answer0" /><label for="q24675:48_answer0" class="m-l-1">a. 89</label> </div>
+<div class="r1"><input type="radio" name="q24675:48_answer" disabled="disabled" value="1" id="q24675:48_answer1" /><label for="q24675:48_answer1" class="m-l-1">b. 21</label> </div>
+<div class="r0"><input type="radio" name="q24675:48_answer" disabled="disabled" value="2" id="q24675:48_answer2" checked="checked" /><label for="q24675:48_answer2" class="m-l-1">c. 91</label> </div>
+<div class="r1"><input type="radio" name="q24675:48_answer" disabled="disabled" value="3" id="q24675:48_answer3" /><label for="q24675:48_answer3" class="m-l-1">d. 17</label> </div>
+</div></div></div></div></div><div id="q8" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">30</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:8_:flagged" value="0" /><input type="checkbox" id="q24675:8_:flaggedcheckbox" name="q24675:8_:flagged" value="1" /><input type="hidden" value="qaid=758093&amp;qubaid=24675&amp;qid=45&amp;slot=8&amp;checksum=aa7a491471b1459b726adab7fd5b5c4a&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:8_:flaggedlabel" for="q24675:8_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:8_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:8_:sequencecheck" value="3" /><div class="qtext"><p>在下列电路中，输入信号中包含clk信号的电路类型是<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:8_answer" disabled="disabled" value="0" id="q24675:8_answer0" checked="checked" /><label for="q24675:8_answer0" class="m-l-1">a. 时序逻辑电路</label> </div>
+<div class="r1"><input type="radio" name="q24675:8_answer" disabled="disabled" value="1" id="q24675:8_answer1" /><label for="q24675:8_answer1" class="m-l-1">b. 组合逻辑电路</label> </div>
+</div></div></div></div></div><div id="q47" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">31</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:47_:flagged" value="0" /><input type="checkbox" id="q24675:47_:flaggedcheckbox" name="q24675:47_:flagged" value="1" /><input type="hidden" value="qaid=758132&amp;qubaid=24675&amp;qid=110&amp;slot=47&amp;checksum=60311e6c38fa6c8092acfc58f6177d7d&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:47_:flaggedlabel" for="q24675:47_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:47_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:47_:sequencecheck" value="3" /><div class="qtext"><p>关于时序仿真和功能仿真
+下列说法正确的是</p><p>
+
+<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:47_choice0" disabled="disabled" value="1" id="q24675:47_choice0" checked="checked" /><label for="q24675:47_choice0" class="m-l-1">a. <span lang="EN-US">quautus9.0</span>中的仿真分为功能仿真和时序仿真</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:47_choice1" disabled="disabled" value="1" id="q24675:47_choice1" /><label for="q24675:47_choice1" class="m-l-1">b. 示波器的显示是有延时的，功能仿真的结果更贴近示波器的显示</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:47_choice2" disabled="disabled" value="1" id="q24675:47_choice2" checked="checked" /><label for="q24675:47_choice2" class="m-l-1">c. 功能仿真仅仅关心输出和输入的逻辑关系是否正确，不考虑时间延时信息。</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:47_choice3" disabled="disabled" value="1" id="q24675:47_choice3" checked="checked" /><label for="q24675:47_choice3" class="m-l-1">d. 时序仿真不仅反应出输出和输入的逻辑关系，同时还计算了时间的延时信息，是与实际系统更接近的一种仿真结果。</label> </div>
+</div></div></div></div></div><div id="q24" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">32</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:24_:flagged" value="0" /><input type="checkbox" id="q24675:24_:flaggedcheckbox" name="q24675:24_:flagged" value="1" /><input type="hidden" value="qaid=758109&amp;qubaid=24675&amp;qid=122&amp;slot=24&amp;checksum=1fde967abfbf68684ccb1d3a8b242600&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:24_:flaggedlabel" for="q24675:24_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:24_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:24_:sequencecheck" value="3" /><div class="qtext"><p>出现下图中错误信息的原因是<img width="1252" height="62" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/24/122/4.png"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:24_answer" disabled="disabled" value="0" id="q24675:24_answer0" checked="checked" /><label for="q24675:24_answer0" class="m-l-1">a. 功能仿真之前没有生成功能仿真网表</label> </div>
+<div class="r1"><input type="radio" name="q24675:24_answer" disabled="disabled" value="1" id="q24675:24_answer1" /><label for="q24675:24_answer1" class="m-l-1">b. 仿真时输入信号激励设置出错</label> </div>
+<div class="r0"><input type="radio" name="q24675:24_answer" disabled="disabled" value="2" id="q24675:24_answer2" /><label for="q24675:24_answer2" class="m-l-1">c. 设计源文件不能正确编译<span id="selectionBoundary_1487810895578_853177136083564">﻿</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:24_answer" disabled="disabled" value="3" id="q24675:24_answer3" /><label for="q24675:24_answer3" class="m-l-1">d. 仿真时波形文件没有正确保存</label> </div>
+</div></div></div></div></div><div id="q21" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">33</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:21_:flagged" value="0" /><input type="checkbox" id="q24675:21_:flaggedcheckbox" name="q24675:21_:flagged" value="1" /><input type="hidden" value="qaid=758106&amp;qubaid=24675&amp;qid=117&amp;slot=21&amp;checksum=676620facff85f24dd48027d3ae17f2c&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:21_:flaggedlabel" for="q24675:21_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:21_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:21_:sequencecheck" value="3" /><div class="qtext"><p>下载时碰到下列问题出错的原因是<img width="898" height="109" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/21/117/2.png"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:21_answer" disabled="disabled" value="0" id="q24675:21_answer0" checked="checked" /><label for="q24675:21_answer0" class="m-l-1">a. 芯片类型选择错误</label> </div>
+<div class="r1"><input type="radio" name="q24675:21_answer" disabled="disabled" value="1" id="q24675:21_answer1" /><label for="q24675:21_answer1" class="m-l-1">b. <span lang="EN-US">USB</span>接头接触不良 <span id="selectionBoundary_1487810450463_019347133792889492">﻿</span></label> </div>
+<div class="r0"><input type="radio" name="q24675:21_answer" disabled="disabled" value="2" id="q24675:21_answer2" /><label for="q24675:21_answer2" class="m-l-1">c. 驱动程序没装好<span id="selectionBoundary_1487810442675_6941914404599863">﻿</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:21_answer" disabled="disabled" value="3" id="q24675:21_answer3" /><label for="q24675:21_answer3" class="m-l-1">d. <span lang="EN-US">USB</span>线有问题</label> </div>
+</div></div></div></div></div><div id="q23" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">34</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:23_:flagged" value="0" /><input type="checkbox" id="q24675:23_:flaggedcheckbox" name="q24675:23_:flagged" value="1" /><input type="hidden" value="qaid=758108&amp;qubaid=24675&amp;qid=120&amp;slot=23&amp;checksum=52bb8cc24adf865d1d1fd8a27ef60b88&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:23_:flaggedlabel" for="q24675:23_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:23_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:23_:sequencecheck" value="3" /><div class="qtext"><p>
+
+下列说法正确的是<span lang="EN-US">:</span></p><p>
+
+<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:23_choice0" disabled="disabled" value="1" id="q24675:23_choice0" /><label for="q24675:23_choice0" class="m-l-1">a. 时钟信号是指有固定周期并与运行无关的信号量，时钟频率（<span lang="EN-US">clock frequency,CF</span>）和时钟周期相等</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:23_choice1" disabled="disabled" value="1" id="q24675:23_choice1" checked="checked" /><label for="q24675:23_choice1" class="m-l-1">b. 时钟信号是时序逻辑的基础，它用于决定逻辑单元中的状态何时更新</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:23_choice2" disabled="disabled" value="1" id="q24675:23_choice2" checked="checked" /><label for="q24675:23_choice2" class="m-l-1">c. <span lang="EN-US">clk</span>是时钟<span lang="EN-US">(Clock)</span>信号的意思</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:23_choice3" disabled="disabled" value="1" id="q24675:23_choice3" checked="checked" /><label for="q24675:23_choice3" class="m-l-1">d. 时钟边沿触发信号意味着所有的状态变化都发生在时钟边沿到来时刻。</label> </div>
+</div></div></div></div></div><div id="q27" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">35</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:27_:flagged" value="0" /><input type="checkbox" id="q24675:27_:flaggedcheckbox" name="q24675:27_:flagged" value="1" /><input type="hidden" value="qaid=758112&amp;qubaid=24675&amp;qid=125&amp;slot=27&amp;checksum=a8d6bcf09eea02132ed1e4fd27ae194f&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:27_:flaggedlabel" for="q24675:27_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:27_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:27_:sequencecheck" value="3" /><div class="qtext"><p>下列说法正确的是<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:27_choice0" disabled="disabled" value="1" id="q24675:27_choice0" /><label for="q24675:27_choice0" class="m-l-1">a. 数字系统往往要求异步时序设计</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:27_choice1" disabled="disabled" value="1" id="q24675:27_choice1" checked="checked" /><label for="q24675:27_choice1" class="m-l-1">b. 现代数字系统设计<span lang="EN-US">=</span>控制模块<span lang="EN-US"> + </span>若干受控制的模块</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:27_choice2" disabled="disabled" value="1" id="q24675:27_choice2" checked="checked" /><label for="q24675:27_choice2" class="m-l-1">c. 受控部件是我们通常所熟悉的各种功能电路去具体执行，而它们又是由某一<span lang="EN-US">FPGA</span>时钟信号驱动的时序电路来控制。</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:27_choice3" disabled="disabled" value="1" id="q24675:27_choice3" checked="checked" /><label for="q24675:27_choice3" class="m-l-1">d. <span lang="EN-US">CLK</span>时钟信号是时序逻辑电路中最重要的信号<span lang="EN-US">.</span></label> </div>
+</div></div></div></div></div><div id="q37" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">36</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:37_:flagged" value="0" /><input type="checkbox" id="q24675:37_:flaggedcheckbox" name="q24675:37_:flagged" value="1" /><input type="hidden" value="qaid=758122&amp;qubaid=24675&amp;qid=86&amp;slot=37&amp;checksum=b5c0b352044bc55913faf69c74462351&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:37_:flaggedlabel" for="q24675:37_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:37_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:37_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些元件属于实验模块模四计数器中选用的元件<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:37_choice0" disabled="disabled" value="1" id="q24675:37_choice0" checked="checked" /><label for="q24675:37_choice0" class="m-l-1">a. DFF</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:37_choice1" disabled="disabled" value="1" id="q24675:37_choice1" /><label for="q24675:37_choice1" class="m-l-1">b. AND2</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:37_choice2" disabled="disabled" value="1" id="q24675:37_choice2" /><label for="q24675:37_choice2" class="m-l-1">c. GND</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:37_choice3" disabled="disabled" value="1" id="q24675:37_choice3" checked="checked" /><label for="q24675:37_choice3" class="m-l-1">d. VCC</label> </div>
+</div></div></div></div></div><div id="q36" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">37</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:36_:flagged" value="0" /><input type="checkbox" id="q24675:36_:flaggedcheckbox" name="q24675:36_:flagged" value="1" /><input type="hidden" value="qaid=758121&amp;qubaid=24675&amp;qid=85&amp;slot=36&amp;checksum=7de5b6f3577077cc4354315cdd8db277&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:36_:flaggedlabel" for="q24675:36_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:36_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:36_:sequencecheck" value="3" /><div class="qtext"><p>计数器芯片有非常多的种类，三位数码管显示电路实验中选用的计数器芯片是下列器件中的哪一个<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:36_answer" disabled="disabled" value="0" id="q24675:36_answer0" /><label for="q24675:36_answer0" class="m-l-1">a. 74162</label> </div>
+<div class="r1"><input type="radio" name="q24675:36_answer" disabled="disabled" value="1" id="q24675:36_answer1" checked="checked" /><label for="q24675:36_answer1" class="m-l-1">b. 74161</label> </div>
+<div class="r0"><input type="radio" name="q24675:36_answer" disabled="disabled" value="2" id="q24675:36_answer2" /><label for="q24675:36_answer2" class="m-l-1">c. 74191</label> </div>
+<div class="r1"><input type="radio" name="q24675:36_answer" disabled="disabled" value="3" id="q24675:36_answer3" /><label for="q24675:36_answer3" class="m-l-1">d. 74160</label> </div>
+</div></div></div></div></div><div id="q32" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">38</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:32_:flagged" value="0" /><input type="checkbox" id="q24675:32_:flaggedcheckbox" name="q24675:32_:flagged" value="1" /><input type="hidden" value="qaid=758117&amp;qubaid=24675&amp;qid=81&amp;slot=32&amp;checksum=657b425149a4e03e4607a7a3bd879951&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:32_:flaggedlabel" for="q24675:32_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:32_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:32_:sequencecheck" value="3" /><div class="qtext"><p>对于同时点亮三个不同的数码管，下列说法正确的是<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:32_choice0" disabled="disabled" value="1" id="q24675:32_choice0" checked="checked" /><label for="q24675:32_choice0" class="m-l-1">a. 第二步：选择第二路D1数据并输出L2数码管</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:32_choice1" disabled="disabled" value="1" id="q24675:32_choice1" checked="checked" /><label for="q24675:32_choice1" class="m-l-1">b. 返回第一步</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:32_choice2" disabled="disabled" value="1" id="q24675:32_choice2" checked="checked" /><label for="q24675:32_choice2" class="m-l-1">c. 第一步：选择第一路D0数据并输出L1数码管</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:32_choice3" disabled="disabled" value="1" id="q24675:32_choice3" checked="checked" /><label for="q24675:32_choice3" class="m-l-1">d. 第三步：选择第三路D2数据并输出L3数码管</label> </div>
+</div></div></div></div></div><div id="q17" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">39</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:17_:flagged" value="0" /><input type="checkbox" id="q24675:17_:flaggedcheckbox" name="q24675:17_:flagged" value="1" /><input type="hidden" value="qaid=758102&amp;qubaid=24675&amp;qid=37&amp;slot=17&amp;checksum=01de2e0e2de9ff9e0bf776327b10c308&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:17_:flaggedlabel" for="q24675:17_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:17_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:17_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些属于FPGA实验板上的硬件资源<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:17_choice0" disabled="disabled" value="1" id="q24675:17_choice0" /><label for="q24675:17_choice0" class="m-l-1">a. 蜂鸣器</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:17_choice1" disabled="disabled" value="1" id="q24675:17_choice1" checked="checked" /><label for="q24675:17_choice1" class="m-l-1">b. 拨码开关</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:17_choice2" disabled="disabled" value="1" id="q24675:17_choice2" checked="checked" /><label for="q24675:17_choice2" class="m-l-1">c. 时钟信号</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:17_choice3" disabled="disabled" value="1" id="q24675:17_choice3" checked="checked" /><label for="q24675:17_choice3" class="m-l-1">d. 数码管</label> </div>
+</div></div></div></div></div><div id="q19" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">40</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:19_:flagged" value="0" /><input type="checkbox" id="q24675:19_:flaggedcheckbox" name="q24675:19_:flagged" value="1" /><input type="hidden" value="qaid=758104&amp;qubaid=24675&amp;qid=78&amp;slot=19&amp;checksum=7e321b6eea58c7bf843fd615013e4030&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:19_:flaggedlabel" for="q24675:19_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:19_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:19_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些属于现在可以能集成为FPGA内部功能的是<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:19_choice0" disabled="disabled" value="1" id="q24675:19_choice0" checked="checked" /><label for="q24675:19_choice0" class="m-l-1">a. DSP和CPU等软核</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:19_choice1" disabled="disabled" value="1" id="q24675:19_choice1" checked="checked" /><label for="q24675:19_choice1" class="m-l-1">b. <span lang="EN-US">I/O</span></label> </div>
+<div class="r0"><input type="checkbox" name="q24675:19_choice2" disabled="disabled" value="1" id="q24675:19_choice2" checked="checked" /><label for="q24675:19_choice2" class="m-l-1">c. RAM和ROM</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:19_choice3" disabled="disabled" value="1" id="q24675:19_choice3" checked="checked" /><label for="q24675:19_choice3" class="m-l-1">d. <span lang="EN-US">PLL</span>锁相环</label> </div>
+</div></div></div></div></div><div id="q31" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">41</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:31_:flagged" value="0" /><input type="checkbox" id="q24675:31_:flaggedcheckbox" name="q24675:31_:flagged" value="1" /><input type="hidden" value="qaid=758116&amp;qubaid=24675&amp;qid=80&amp;slot=31&amp;checksum=26244cd54323adb8c23057eda5aa32f9&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:31_:flaggedlabel" for="q24675:31_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:31_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:31_:sequencecheck" value="3" /><div class="qtext"><p>要正确点亮一个数码管，需要对这个数码管提供几种不同类型的控制信号<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:31_answer" disabled="disabled" value="0" id="q24675:31_answer0" checked="checked" /><label for="q24675:31_answer0" class="m-l-1">a. 2种</label> </div>
+<div class="r1"><input type="radio" name="q24675:31_answer" disabled="disabled" value="1" id="q24675:31_answer1" /><label for="q24675:31_answer1" class="m-l-1">b. 3种</label> </div>
+<div class="r0"><input type="radio" name="q24675:31_answer" disabled="disabled" value="2" id="q24675:31_answer2" /><label for="q24675:31_answer2" class="m-l-1">c. 1种</label> </div>
+<div class="r1"><input type="radio" name="q24675:31_answer" disabled="disabled" value="3" id="q24675:31_answer3" /><label for="q24675:31_answer3" class="m-l-1">d. 4种</label> </div>
+</div></div></div></div></div><div id="q14" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">42</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:14_:flagged" value="0" /><input type="checkbox" id="q24675:14_:flaggedcheckbox" name="q24675:14_:flagged" value="1" /><input type="hidden" value="qaid=758099&amp;qubaid=24675&amp;qid=33&amp;slot=14&amp;checksum=1d45f345dee3cfbca651a4781f107de4&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:14_:flaggedlabel" for="q24675:14_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:14_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:14_:sequencecheck" value="3" /><div class="qtext"><p>下列哪些选项属于FPGA实验流程中的部分<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:14_choice0" disabled="disabled" value="1" id="q24675:14_choice0" checked="checked" /><label for="q24675:14_choice0" class="m-l-1">a. 设计输入</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:14_choice1" disabled="disabled" value="1" id="q24675:14_choice1" checked="checked" /><label for="q24675:14_choice1" class="m-l-1">b. 引脚约束</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:14_choice2" disabled="disabled" value="1" id="q24675:14_choice2" checked="checked" /><label for="q24675:14_choice2" class="m-l-1">c. 工程立项</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:14_choice3" disabled="disabled" value="1" id="q24675:14_choice3" checked="checked" /><label for="q24675:14_choice3" class="m-l-1">d. 分析综合</label> </div>
+</div></div></div></div></div><div id="q25" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">43</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:25_:flagged" value="0" /><input type="checkbox" id="q24675:25_:flaggedcheckbox" name="q24675:25_:flagged" value="1" /><input type="hidden" value="qaid=758110&amp;qubaid=24675&amp;qid=123&amp;slot=25&amp;checksum=057f422adf352711a2debe5e79004df2&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:25_:flaggedlabel" for="q24675:25_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:25_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:25_:sequencecheck" value="3" /><div class="qtext"><p>在下载时，未使用的管脚需要设置成下图中的哪一项<img width="461" height="260" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/25/123/5.png"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:25_answer" disabled="disabled" value="0" id="q24675:25_answer0" /><label for="q24675:25_answer0" class="m-l-1">a. <span lang="EN-US">As
+output driving ground</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:25_answer" disabled="disabled" value="1" id="q24675:25_answer1" /><label for="q24675:25_answer1" class="m-l-1">b. <span lang="EN-US">As
+input tri-stated with weak pull-up resisto<span id="selectionBoundary_1487811008138_7122234109674086">﻿</span></span></label> </div>
+<div class="r0"><input type="radio" name="q24675:25_answer" disabled="disabled" value="2" id="q24675:25_answer2" /><label for="q24675:25_answer2" class="m-l-1">c. <span lang="EN-US">As
+input tri-stated with bus-hold circuity</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:25_answer" disabled="disabled" value="3" id="q24675:25_answer3" checked="checked" /><label for="q24675:25_answer3" class="m-l-1">d. <span lang="EN-US">As
+input tri-stated</span></label> </div>
+</div></div></div></div></div><div id="q22" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">44</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:22_:flagged" value="0" /><input type="checkbox" id="q24675:22_:flaggedcheckbox" name="q24675:22_:flagged" value="1" /><input type="hidden" value="qaid=758107&amp;qubaid=24675&amp;qid=118&amp;slot=22&amp;checksum=5ab7ab3e25da142aec9b1944d077f47a&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:22_:flaggedlabel" for="q24675:22_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:22_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:22_:sequencecheck" value="3" /><div class="qtext"><p>关于下面电路图，说法正确的是<img width="621" height="392" class="img-responsive atto_image_button_text-bottom" role="presentation" alt="" src="http://10.64.17.119/moodle/pluginfile.php/56/question/questiontext/24675/22/118/3.png"><br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:22_answer" disabled="disabled" value="0" id="q24675:22_answer0" checked="checked" /><label for="q24675:22_answer0" class="m-l-1">a. 编译能通过，波形仿真结果错误</label> </div>
+<div class="r1"><input type="radio" name="q24675:22_answer" disabled="disabled" value="1" id="q24675:22_answer1" /><label for="q24675:22_answer1" class="m-l-1">b. 编译能通过，波形仿真结果正确</label> </div>
+<div class="r0"><input type="radio" name="q24675:22_answer" disabled="disabled" value="2" id="q24675:22_answer2" /><label for="q24675:22_answer2" class="m-l-1">c. 编译不能通过，波形仿真结果正确<span id="selectionBoundary_1487810565619_4610589768635103">﻿</span></label> </div>
+<div class="r1"><input type="radio" name="q24675:22_answer" disabled="disabled" value="3" id="q24675:22_answer3" /><label for="q24675:22_answer3" class="m-l-1">d. 编译不能通过，波形仿真结果错误</label> </div>
+</div></div></div></div></div><div id="q35" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">45</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:35_:flagged" value="0" /><input type="checkbox" id="q24675:35_:flaggedcheckbox" name="q24675:35_:flagged" value="1" /><input type="hidden" value="qaid=758120&amp;qubaid=24675&amp;qid=84&amp;slot=35&amp;checksum=5fd7f1a7f533baa29fa96650e723dc4f&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:35_:flaggedlabel" for="q24675:35_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:35_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:35_:sequencecheck" value="3" /><div class="qtext"><p>哪些类型的文件属于本次实验所涉及到的设计源文件的后缀名<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:35_choice0" disabled="disabled" value="1" id="q24675:35_choice0" checked="checked" /><label for="q24675:35_choice0" class="m-l-1">a. .BDF文件</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:35_choice1" disabled="disabled" value="1" id="q24675:35_choice1" /><label for="q24675:35_choice1" class="m-l-1">b. .QPF文件</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:35_choice2" disabled="disabled" value="1" id="q24675:35_choice2" /><label for="q24675:35_choice2" class="m-l-1">c. .BSF文件</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:35_choice3" disabled="disabled" value="1" id="q24675:35_choice3" checked="checked" /><label for="q24675:35_choice3" class="m-l-1">d. &nbsp;.VHD文件</label> </div>
+</div></div></div></div></div><div id="q7" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">46</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:7_:flagged" value="0" /><input type="checkbox" id="q24675:7_:flaggedcheckbox" name="q24675:7_:flagged" value="1" /><input type="hidden" value="qaid=758092&amp;qubaid=24675&amp;qid=44&amp;slot=7&amp;checksum=a476d8314e86e47fb6d03ad8db65335f&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:7_:flaggedlabel" for="q24675:7_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:7_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:7_:sequencecheck" value="3" /><div class="qtext"><p>在下列电路中，输出只和输入有关的电路类型是<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:7_answer" disabled="disabled" value="0" id="q24675:7_answer0" /><label for="q24675:7_answer0" class="m-l-1">a. 时序逻辑电路</label> </div>
+<div class="r1"><input type="radio" name="q24675:7_answer" disabled="disabled" value="1" id="q24675:7_answer1" checked="checked" /><label for="q24675:7_answer1" class="m-l-1">b. 组合逻辑电路</label> </div>
+</div></div></div></div></div><div id="q10" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">47</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:10_:flagged" value="0" /><input type="checkbox" id="q24675:10_:flaggedcheckbox" name="q24675:10_:flagged" value="1" /><input type="hidden" value="qaid=758095&amp;qubaid=24675&amp;qid=47&amp;slot=10&amp;checksum=a79f2f4903976fe48ca458b98837bd50&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:10_:flaggedlabel" for="q24675:10_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:10_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:10_:sequencecheck" value="3" /><div class="qtext"><p>D触发器，输出等于输入是在时钟信号什么状态下发生的<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:10_answer" disabled="disabled" value="0" id="q24675:10_answer0" /><label for="q24675:10_answer0" class="m-l-1">a. 为0时</label> </div>
+<div class="r1"><input type="radio" name="q24675:10_answer" disabled="disabled" value="1" id="q24675:10_answer1" /><label for="q24675:10_answer1" class="m-l-1">b. 下降沿</label> </div>
+<div class="r0"><input type="radio" name="q24675:10_answer" disabled="disabled" value="2" id="q24675:10_answer2" /><label for="q24675:10_answer2" class="m-l-1">c. 为1时</label> </div>
+<div class="r1"><input type="radio" name="q24675:10_answer" disabled="disabled" value="3" id="q24675:10_answer3" checked="checked" /><label for="q24675:10_answer3" class="m-l-1">d. 上升沿</label> </div>
+</div></div></div></div></div><div id="q11" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">48</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:11_:flagged" value="0" /><input type="checkbox" id="q24675:11_:flaggedcheckbox" name="q24675:11_:flagged" value="1" /><input type="hidden" value="qaid=758096&amp;qubaid=24675&amp;qid=29&amp;slot=11&amp;checksum=888cca124418706bda370bc1af7b0931&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:11_:flaggedlabel" for="q24675:11_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:11_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:11_:sequencecheck" value="3" /><div class="qtext"><p>关于FPGA下列说法正确的是<br></p></div><div class="ablock"><div class="prompt">选择一项或多项：</div><div class="answer"><div class="r0"><input type="checkbox" name="q24675:11_choice0" disabled="disabled" value="1" id="q24675:11_choice0" checked="checked" /><label for="q24675:11_choice0" class="m-l-1">a. <span lang="EN-US">FPGA</span>的中文意思是现场可编程门阵列</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:11_choice1" disabled="disabled" value="1" id="q24675:11_choice1" checked="checked" /><label for="q24675:11_choice1" class="m-l-1">b. FPGA是Field－Programmable Gate Array的缩写</label> </div>
+<div class="r0"><input type="checkbox" name="q24675:11_choice2" disabled="disabled" value="1" id="q24675:11_choice2" checked="checked" /><label for="q24675:11_choice2" class="m-l-1">c. FPGA是在PAL、GAL、CPLD等可编程器件的基础上进一步发展的产物</label> </div>
+<div class="r1"><input type="checkbox" name="q24675:11_choice3" disabled="disabled" value="1" id="q24675:11_choice3" checked="checked" /><label for="q24675:11_choice3" class="m-l-1">d. FPGA是作为专用集成电路（ASIC）领域中的一种半定制电路而出现的，既解决了定制电路的不足，又克服了原有可编程器件门电路数有限的缺点。</label> </div>
+</div></div></div></div></div><div id="q5" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">49</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:5_:flagged" value="0" /><input type="checkbox" id="q24675:5_:flaggedcheckbox" name="q24675:5_:flagged" value="1" /><input type="hidden" value="qaid=758090&amp;qubaid=24675&amp;qid=42&amp;slot=5&amp;checksum=19963c6b323423e895c12d222fe1e9b1&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:5_:flaggedlabel" for="q24675:5_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:5_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:5_:sequencecheck" value="3" /><div class="qtext"><p>将输入信号a7的值赋给输出信号x7，下列语句中正确的是<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:5_answer" disabled="disabled" value="0" id="q24675:5_answer0" /><label for="q24675:5_answer0" class="m-l-1">a. x7=a7</label> </div>
+<div class="r1"><input type="radio" name="q24675:5_answer" disabled="disabled" value="1" id="q24675:5_answer1" checked="checked" /><label for="q24675:5_answer1" class="m-l-1">b. x7&lt;=a7</label> </div>
+<div class="r0"><input type="radio" name="q24675:5_answer" disabled="disabled" value="2" id="q24675:5_answer2" /><label for="q24675:5_answer2" class="m-l-1">c. a7=x7</label> </div>
+<div class="r1"><input type="radio" name="q24675:5_answer" disabled="disabled" value="3" id="q24675:5_answer3" /><label for="q24675:5_answer3" class="m-l-1">d. x7:=a7</label> </div>
+</div></div></div></div></div><div id="q6" class="que multichoice deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">50</span></h3><div class="state">完成</div><div class="grade">获得1.00分中的1.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q24675:6_:flagged" value="0" /><input type="checkbox" id="q24675:6_:flaggedcheckbox" name="q24675:6_:flagged" value="1" /><input type="hidden" value="qaid=758091&amp;qubaid=24675&amp;qid=43&amp;slot=6&amp;checksum=7ca67a808ed40974f7d4ed2e6118a744&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q24675:6_:flaggedlabel" for="q24675:6_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q24675:6_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q24675:6_:sequencecheck" value="3" /><div class="qtext"><p>本次实验中涉及到的电路主要有几种不同的类型<br></p></div><div class="ablock"><div class="prompt">选择一项：</div><div class="answer"><div class="r0"><input type="radio" name="q24675:6_answer" disabled="disabled" value="0" id="q24675:6_answer0" /><label for="q24675:6_answer0" class="m-l-1">a. 4</label> </div>
+<div class="r1"><input type="radio" name="q24675:6_answer" disabled="disabled" value="1" id="q24675:6_answer1" /><label for="q24675:6_answer1" class="m-l-1">b. 3</label> </div>
+<div class="r0"><input type="radio" name="q24675:6_answer" disabled="disabled" value="2" id="q24675:6_answer2" checked="checked" /><label for="q24675:6_answer2" class="m-l-1">c. 2</label> </div>
+<div class="r1"><input type="radio" name="q24675:6_answer" disabled="disabled" value="3" id="q24675:6_answer3" /><label for="q24675:6_answer3" class="m-l-1">d. 1</label> </div>
+</div></div></div></div></div><input type="hidden" name="sesskey" value="YCsdzE0XyT" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton btn btn-secondary" name="savingflags" value="保存这些标记的状态" /></div></div></form><div class="submitbtns"><a class="mod_quiz-next-nav" href="http://10.64.17.119/moodle/mod/quiz/view.php?id=10">结束回顾</a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">跳过 &lt;span id=&quot;mod_quiz_navblock_title&quot;&gt;测验导航&lt;/span&gt;</a>
+
+<aside id="mod_quiz_navblock"
+     class=" block block__fake  card m-b-1"
+     role="navigation"
+     data-block="_fake"
+          aria-labelledby="instance-0-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title"><span id="mod_quiz_navblock_title">测验导航</span></h3>
+
+        <div class="card-text content">
+            <div class="qn_buttons clearfix allquestionsononepage"><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton26" title="完成" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 1<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton13" title="完成" data-quiz-page="1" href="#q13"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 2<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton9" title="完成" data-quiz-page="2" href="#q9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 3<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton15" title="完成" data-quiz-page="3" href="#q15"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 4<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton43" title="完成" data-quiz-page="4" href="#q43"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 5<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton2" title="完成" data-quiz-page="5" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 6<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton34" title="完成" data-quiz-page="6" href="#q34"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 7<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton50" title="完成" data-quiz-page="7" href="#q50"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 8<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton28" title="完成" data-quiz-page="8" href="#q28"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 9<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton18" title="完成" data-quiz-page="9" href="#q18"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 10<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton40" title="完成" data-quiz-page="10" href="#q40"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 11<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton45" title="完成" data-quiz-page="11" href="#q45"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 12<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton46" title="完成" data-quiz-page="12" href="#q46"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 13<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton38" title="完成" data-quiz-page="13" href="#q38"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 14<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton49" title="完成" data-quiz-page="14" href="#q49"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 15<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton33" title="完成" data-quiz-page="15" href="#q33"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 16<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton4" title="完成" data-quiz-page="16" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 17<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton3" title="完成" data-quiz-page="17" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 18<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton44" title="完成" data-quiz-page="18" href="#q44"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 19<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton20" title="完成" data-quiz-page="19" href="#q20"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 20<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton1" title="完成" data-quiz-page="20" href="#q1"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 21<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton39" title="完成" data-quiz-page="21" href="#q39"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 22<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton16" title="完成" data-quiz-page="22" href="#q16"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 23<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton42" title="完成" data-quiz-page="23" href="#q42"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 24<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton12" title="完成" data-quiz-page="24" href="#q12"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 25<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton30" title="完成" data-quiz-page="25" href="#q30"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 26<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton29" title="完成" data-quiz-page="26" href="#q29"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 27<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton41" title="完成" data-quiz-page="27" href="#q41"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 28<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton48" title="完成" data-quiz-page="28" href="#q48"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 29<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton8" title="完成" data-quiz-page="29" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 30<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton47" title="完成" data-quiz-page="30" href="#q47"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 31<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton24" title="完成" data-quiz-page="31" href="#q24"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 32<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton21" title="完成" data-quiz-page="32" href="#q21"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 33<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton23" title="完成" data-quiz-page="33" href="#q23"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 34<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton27" title="完成" data-quiz-page="34" href="#q27"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 35<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton37" title="完成" data-quiz-page="35" href="#q37"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 36<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton36" title="完成" data-quiz-page="36" href="#q36"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 37<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton32" title="完成" data-quiz-page="37" href="#q32"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 38<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton17" title="完成" data-quiz-page="38" href="#q17"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 39<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton19" title="完成" data-quiz-page="39" href="#q19"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 40<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton31" title="完成" data-quiz-page="40" href="#q31"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 41<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton14" title="完成" data-quiz-page="41" href="#q14"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 42<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton25" title="完成" data-quiz-page="42" href="#q25"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 43<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton22" title="完成" data-quiz-page="43" href="#q22"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 44<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton35" title="完成" data-quiz-page="44" href="#q35"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 45<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton7" title="完成" data-quiz-page="45" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 46<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton10" title="完成" data-quiz-page="46" href="#q10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 47<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton11" title="完成" data-quiz-page="47" href="#q11"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 48<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton5" title="完成" data-quiz-page="48" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 49<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton6" title="完成" data-quiz-page="49" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 50<span class="accesshide"> 此页 <span class="flagstate"></span></span></a></div><div class="othernav"><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676">一次显示一页</a><a class="mod_quiz-next-nav" href="http://10.64.17.119/moodle/mod/quiz/view.php?id=10">结束回顾</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2" data-key="coursehome">
+                <div class="m-l-0">
+                        数字系统实验
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/user/index.php?id=2" data-key="participants">
+                <div class="m-l-0">
+                        成员
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/badges/view.php?type=2&amp;id=2" data-key="badgesview">
+                <div class="m-l-0">
+                        勋章
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/admin/tool/lp/coursecompetencies.php?courseid=2" data-key="2">
+                <div class="m-l-0">
+                        能力
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/grade/report/index.php?id=2" data-key="grades">
+                <div class="m-l-0">
+                        成绩
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-0" data-key="1">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">常规</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-1" data-key="23">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">疑难解答</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-2" data-key="5">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">教学资源</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-3" data-key="3">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第一次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="http://10.64.17.119/moodle/course/view.php?id=2#section-4" data-key="4">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第二次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-5" data-key="22">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第三次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-7" data-key="12">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第五次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-9" data-key="24">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第七次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-10" data-key="35">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第八次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-11" data-key="21">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第九次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-15" data-key="47">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">综合实验（倒车雷达）</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/my/" data-key="myhome">
+                <div class="m-l-0">
+                        个人主页
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        网站首页
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        日程管理
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/user/files.php" data-key="5">
+                <div class="m-l-0">
+                        私人文件
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    我的课程
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        数字系统实验
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">您以<a href="http://10.64.17.119/moodle/user/profile.php?id=1361" title="查看个人资料">201608060208林金磊</a>登录 (<a href="http://10.64.17.119/moodle/login/logout.php?sesskey=YCsdzE0XyT">退出</a>)</div>
+        <div class="homelink"><a href="http://10.64.17.119/moodle/course/view.php?id=2">数字系统实验</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                                    <li><a href="#" title="语言">简体中文 ‎(zh_cn)‎</a></li>
+                                <ul class="list-unstyled m-l-1">
+                                                    <li><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676&amp;showall=1&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                    <li><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=23676&amp;showall=1&amp;lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a></li>
+                                </ul>
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://10.64.17.119/moodle/lib/requirejs.php/1516321068/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "http://10.64.17.119/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("zh-CN",{
+ "Play": "播放",
+ "Pause": "暂停",
+ "Current Time": "当前时间",
+ "Duration Time": "时长",
+ "Remaining Time": "剩余时间",
+ "Stream Type": "媒体流类型",
+ "LIVE": "直播",
+ "Loaded": "加载完毕",
+ "Progress": "进度",
+ "Fullscreen": "全屏",
+ "Non-Fullscreen": "退出全屏",
+ "Mute": "静音",
+ "Unmute": "取消静音",
+ "Playback Rate": "播放码率",
+ "Subtitles": "字幕",
+ "subtitles off": "字幕关闭",
+ "Captions": "内嵌字幕",
+ "captions off": "内嵌字幕关闭",
+ "Chapters": "节目段落",
+ "You aborted the media playback": "视频播放被终止",
+ "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "视频因格式不支持或者服务器或网络的问题无法加载。",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+ "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+ "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select5af24e557b30e14',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select5af24e557b30e16',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(589, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u6700\u540e\u4fee\u6539","name":"\u540d\u79f0","error":"\u9519\u8bef","info":"\u4fe1\u606f","yes":"\u662f","no":"\u5426","cancel":"\u53d6\u6d88","changesmadereallygoaway":"\u60a8\u505a\u51fa\u4e86\u6539\u52a8\u3002\u60a8\u786e\u5b9a\u8981\u79bb\u5f00\u5e76\u653e\u5f03\u6240\u6709\u6539\u52a8\u5417\uff1f","morehelp":"\u66f4\u591a\u5e2e\u52a9","loadinghelp":"\u8f7d\u5165\u4e2d\u2026\u2026","confirm":"\u786e\u8ba4","areyousure":"\u4f60\u786e\u5b9a\u5417\uff1f","closebuttontitle":"\u5173\u95ed","unknownerror":"\u672b\u77e5\u9519\u8bef"},"repository":{"type":"\u7c7b\u578b","size":"\u5927\u5c0f","invalidjson":"\u65e0\u6548\u7684JSON\u5b57\u7b26\u4e32","nofilesattached":"\u6ca1\u6709\u9644\u4ef6","filepicker":"\u6587\u4ef6\u9009\u62e9\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6ca1\u6709\u53ef\u7528\u6587\u4ef6","norepositoriesavailable":"\u62b1\u6b49\uff0c\u60a8\u4f7f\u7528\u7684\u5bb9\u5668\u90fd\u4e0d\u80fd\u8fd4\u56de\u7b26\u5408\u9700\u8981\u7684\u683c\u5f0f\u7684\u6587\u4ef6\u3002","fileexistsdialogheader":"\u6587\u4ef6\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u60a8\u6b63\u7f16\u8f91\u7684\u6587\u672c\u7684\u9644\u4ef6\u4e2d\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6\u3002","fileexistsdialog_filemanager":"\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6","renameto":"\u91cd\u547d\u540d\u4e3a\u201c{$a}\u201d","referencesexist":"\u6709 {$a} \u4e2a\u522b\u540d\u6216\u5feb\u6377\u65b9\u5f0f\u5f15\u7528\u6b64\u6587\u4ef6","select":"\u9009\u62e9"},"admin":{"confirmdeletecomments":"\u60a8\u5c06\u5220\u9664\u8bc4\u8bba\uff0c\u786e\u5b9a\u5417\uff1f","confirmation":"\u786e\u8ba4"},"question":{"flagged":"\u5df2\u6807\u8bb0"},"quiz":{"functiondisabledbysecuremode":"\u8be5\u529f\u80fd\u76ee\u524d\u5df2\u505c\u7528","startattempt":"\u5f00\u59cb\u7b54\u9898","timesup":"\u65f6\u95f4\u5230\uff01"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random5af24e557b30e1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "http:\/\/10.64.17.119\/moodle\/question\/toggleflag.php", [{"src":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/unflagged","title":"\u6807\u8bb0\u6b64\u9898\u76ee\u4f9b\u5c06\u6765\u53c2\u8003","alt":"\u672a\u6807\u8bb0"},{"src":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/flagged","title":"\u5220\u9664\u6807\u8bb0","alt":"\u5df2\u6807\u8bb0"}], ["\u6807\u8bb0\u9898\u76ee","\u79fb\u9664\u6807\u8bb0"]);  M.util.js_complete('random5af24e557b30e1'); });
+ M.util.js_pending('random5af24e557b30e2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5af24e557b30e2'); });
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5af24e557b30e17'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5af24e557b30e17'); });
+ M.util.js_pending('random5af24e557b30e18'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5af24e557b30e18'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="zh-cn" xml:lang="zh-cn">
+<head>
+    <title>训练8</title>
+    <link rel="shortcut icon" href="http://10.64.17.119/moodle/theme/image.php/boost/theme/1516321044/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 训练8" />
+<link rel="stylesheet" type="text/css" href="http://10.64.17.119/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://10.64.17.119/moodle/theme/styles.php/boost/1516321044/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/10.64.17.119\/moodle","sesskey":"YCsdzE0XyT","loadingicon":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/loading_small","themerev":"1516321044","slasharguments":1,"theme":"boost","jsrev":"1516321068","admin":"admin","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?m\/1516321068\/","combine":true,"comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1516321068\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/10.64.17.119\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/10.64.17.119\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1516321068\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.7-latest\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-quiz-review" class="format-topics  path-mod path-mod-quiz safari dir-ltr lang-zh_cn yui-skin-sam yui3-skin-sam 10-64-17-119--moodle pagelayout-incourse course-2 context-3181 cmid-60 category-3 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳到主要内容</a>
+</div><script type="text/javascript" src="http://10.64.17.119/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js&amp;rollup/1516321068/mcore-min.js"></script><script type="text/javascript" src="http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">&#9776;</span><span class="sr-only">展开</span></button>
+            </div>
+    
+            <a href="http://10.64.17.119/moodle" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">MOODLE</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1"data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar"role="menubar">
+
+            <span class="dropdown">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">201608060208林金磊</span><span class="avatars"><span class="avatar current"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/u/f2" alt="201608060208林金磊的头像" title="201608060208林金磊的头像" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu"data-rel="menu-content"aria-labelledby="action-menu-toggle-1"role="menu"data-align="tr-br" aria-labelledby="dropdown-1">
+            <a href="http://10.64.17.119/moodle/my/" class="dropdown-item menu-action" role="menuitem"data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/course" />
+<span class="menu-action-text" id="actionmenuaction-1">个人主页</span></a><div class="dropdown-divider"></div><a href="http://10.64.17.119/moodle/user/profile.php?id=1361" class="dropdown-item menu-action" role="menuitem"data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/user" />
+<span class="menu-action-text" id="actionmenuaction-2">个人档案</span></a><a href="http://10.64.17.119/moodle/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem"data-title="grades,grades" aria-labelledby="actionmenuaction-3"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/grades" />
+<span class="menu-action-text" id="actionmenuaction-3">成绩</span></a><a href="http://10.64.17.119/moodle/message/index.php" class="dropdown-item menu-action" role="menuitem"data-title="messages,message" aria-labelledby="actionmenuaction-4"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/message" />
+<span class="menu-action-text" id="actionmenuaction-4">消息</span></a><a href="http://10.64.17.119/moodle/user/preferences.php" class="dropdown-item menu-action" role="menuitem"data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/preferences" />
+<span class="menu-action-text" id="actionmenuaction-5">使用偏好</span></a><div class="dropdown-divider"></div><a href="http://10.64.17.119/moodle/login/logout.php?sesskey=YCsdzE0XyT" class="dropdown-item menu-action" role="menuitem"data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><img class="icon " class="iconsmall" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/a/logout" />
+<span class="menu-action-text" id="actionmenuaction-6">退出</span></a>
+        </div>
+</span>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="1361"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5af24eb47c4445af24eb471dba12"
+        aria-haspopup="true"
+        aria-label="显示没有新消息的消息窗口"
+        tabindex="0">
+                <img class="icon smallicon" alt=" 消息菜单开关 " title=" 消息菜单开关 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/message" />
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5af24eb47c4445af24eb471dba12"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">消息</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+                <a href="http://10.64.17.119/moodle/message/index.php?contactsfirst=1">新消息
+                </a>
+        </div>
+        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    role="button"
+                    title="全部标为已读"
+                    data-action="mark-all-read">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" 全部标为已读 " title=" 全部标为已读 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/markasread" /></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        全部标为已读
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="http://10.64.17.119/moodle/message/edit.php?id=1361"
+                    title="信息偏好">
+                    <img class="icon smallicon" alt=" 信息偏好 " title=" 信息偏好 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/settings" />
+                </a>
+
+    <div class="hover-tooltip">
+        信息偏好
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">没有新消息</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://10.64.17.119/moodle/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">查看所有</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="1361"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5af24eb47cf2f5af24eb471dba13"
+        aria-haspopup="true"
+        aria-label="显示没有新通知的通知窗口"
+        tabindex="0">
+                <img class="icon smallicon" alt=" 通知菜单开关 " title=" 通知菜单开关 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/notifications" />
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5af24eb47cf2f5af24eb471dba13"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">通知</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    title="全部标为已读"
+                    data-action="mark-all-read"
+                    role="button">
+                    <span class="normal-icon"><img class="icon smallicon" alt=" 全部标为已读 " title=" 全部标为已读 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/t/markasread" /></span>
+                    <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+                </a>
+
+    <div class="hover-tooltip">
+        全部标为已读
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="http://10.64.17.119/moodle/message/notificationpreferences.php?userid=1361"
+                    title="通知偏好">
+                    <img class="icon smallicon" alt=" 通知偏好 " title=" 通知偏好 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/settings" />
+                </a>
+
+    <div class="hover-tooltip">
+        通知偏好
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">您没有通知</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon smallicon" alt=" 载入中 " title=" 载入中 " src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="http://10.64.17.119/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">查看所有</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                <span class="dropdown nav-item">
+    <a class="dropdown-toggle nav-link" id="drop-down-5af24eb47da535af24eb471dba15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        简体中文 ‎(zh_cn)‎
+    </a>
+    <div class="dropdown-menu" aria-labelledby="drop-down-5af24eb47da535af24eb471dba15">
+                <a class="dropdown-item" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                <a class="dropdown-item" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a>
+    </div>
+</span>
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="page-context-header"><div class="page-header-headings"><h1>数字系统实验</h1></div></div><div class="clearfix" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/my/" >个人主页</a></li>
+                <li class="breadcrumb-item">我的课程</li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/course/view.php?id=2" title="数字系统实验">数字系统实验</a></li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/course/view.php?id=2#section-10" >第八次课</a></li>
+                <li class="breadcrumb-item"><a href="http://10.64.17.119/moodle/mod/quiz/view.php?id=60" title="测验">训练8</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><table class="generaltable generalbox quizreviewsummary"><tbody><tr><th class="cell" scope="row">开始时间</th><td class="cell">2018年04月24日 星期二 09:27</td></tr><tr><th class="cell" scope="row">状态</th><td class="cell">完成</td></tr><tr><th class="cell" scope="row">完成于</th><td class="cell">2018年04月24日 星期二 12:54</td></tr><tr><th class="cell" scope="row">耗时</th><td class="cell">3 小时 26 分钟</td></tr><tr><th class="cell" scope="row">成绩</th><td class="cell"><b>297.00</b>/满分297.00 (<b>100</b>%)</td></tr></tbody></table><form action="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168" method="post" class="questionflagsaveform"><div><div id="q1" class="que match deferredfeedback complete"><div class="info"><h3 class="no">题目<span class="qno">1</span></h3><div class="state">完成</div><div class="grade">获得10.00分中的10.00分</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q30417:1_:flagged" value="0" /><input type="checkbox" id="q30417:1_:flaggedcheckbox" name="q30417:1_:flagged" value="1" /><input type="hidden" value="qaid=934960&amp;qubaid=30417&amp;qid=512&amp;slot=1&amp;checksum=cb9839f2e67042a5ca60474d9859bdbe&amp;sesskey=YCsdzE0XyT&amp;newstate=" class="questionflagpostdata" /><label id="q30417:1_:flaggedlabel" for="q30417:1_:flaggedcheckbox"><img src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/unflagged" alt="未标记" id="q30417:1_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">题干</h4><input type="hidden" name="q30417:1_:sequencecheck" value="3" /><div class="qtext"><p>
+
+</p><p>用元件例化语句设计如图所示电路。补充①<span lang="EN-US">-</span>⑩的语句<span lang="EN-US"></span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;</span></p><p>
+
+</p><p><span lang="EN-US"><img width="264" height="160" src="data:image/png;base64,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" v:shapes="_x0000_i1025"></span></p><p>
+
+</p><p align="left"><span lang="EN-US">LIBRARY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>①<span lang="EN-US">_____________</span><span lang="EN-US">;</span></p><p>
+
+</p><p><span lang="EN-US">USE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ieee.std_logic_1164.ALL;</span></p><p>
+
+</p><p><span lang="EN-US">ENTITY yf4 IS</span></p><p>
+
+</p><p><span lang="EN-US">PORT(&nbsp;&nbsp;&nbsp; </span>②<span lang="EN-US">____________</span><span lang="EN-US">:&nbsp;&nbsp;&nbsp; IN&nbsp;&nbsp; std_logic;</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Z: </span>③<span lang="EN-US">__________ std_logic</span><span lang="EN-US">);</span></p><p>
+
+</p><p><span lang="EN-US">END yf4;</span></p><p>
+
+</p><p><span lang="EN-US">ARCHITECTURE&nbsp; a&nbsp; OF yf4
+IS</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp; </span>④<span lang="EN-US">____________</span><span lang="EN-US">yf2</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp; PORT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (A1,B1:&nbsp;&nbsp; IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+std_logic;</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OUT&nbsp;
+std_logic);</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp; END COMPONENT;</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp; </span>⑤<span lang="EN-US">_____________</span><span lang="EN-US"> X,Y: std_logic ;</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;</span></p><p>
+
+</p><p align="left"><span lang="EN-US">&nbsp;&nbsp; BEGIN</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;U1:</span>⑥<span lang="EN-US">____________</span><span lang="EN-US">&nbsp; PORT MAP (</span>⑦<span lang="EN-US">_________</span><span lang="EN-US">,X);</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; U2:yf2&nbsp;
+</span>⑧<span lang="EN-US">____________</span><span lang="EN-US">(C,D,</span>⑨<span lang="EN-US">_____________</span><span lang="EN-US">);</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp; U3:yf2&nbsp;
+PORT MAP </span><span lang="EN-US">(</span>⑩<span lang="EN-US">_______________, </span><span lang="EN-US">B1 =&gt; Y);</span></p><p>
+
+</p><p><span lang="EN-US">END a;</span></p><p>
+
+</p><p><span lang="EN-US">&nbsp;</span></p><p>
+
+<br></p></div><div class="ablock"><table class="answer"><tbody><tr class="r0"><td class="text"><p>⑩<span lang="EN-US"></span><br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub0">答案 1</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub0" name="q30417:1_sub0"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option selected="selected" value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r1"><td class="text"><p>⑥<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub1">答案 2</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub1" name="q30417:1_sub1"><option value="0">选择...</option><option value="1">OUT</option><option selected="selected" value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r0"><td class="text"><p>④<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub2">答案 3</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub2" name="q30417:1_sub2"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option selected="selected" value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r1"><td class="text"><p>⑧<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub3">答案 4</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub3" name="q30417:1_sub3"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option selected="selected" value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r0"><td class="text"><p>③<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub4">答案 5</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub4" name="q30417:1_sub4"><option value="0">选择...</option><option selected="selected" value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r1"><td class="text"><p>①<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub5">答案 6</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub5" name="q30417:1_sub5"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option selected="selected" value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r0"><td class="text"><p>⑨<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub6">答案 7</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub6" name="q30417:1_sub6"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option selected="selected" value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r1"><td class="text"><p>②<span lang="EN-US"></span><br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub7">答案 8</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub7" name="q30417:1_sub7"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option selected="selected" value="10">A,B,C,D</option></select> </td></tr><tr class="r0"><td class="text"><p>⑦<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub8">答案 9</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub8" name="q30417:1_sub8"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option value="6">SIGNAL</option><option selected="selected" value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr><tr class="r1"><td class="text"><p>⑤<br></p></td><td class="control"><label class="accesshide" for="menuq30417:1_sub9">答案 10</label><select disabled="disabled" class="select custom-select custom-select m-l-1" id="menuq30417:1_sub9" name="q30417:1_sub9"><option value="0">选择...</option><option value="1">OUT</option><option value="2">yf2</option><option value="3">A1 =&gt; X, C1=&gt;Z</option><option value="4">Y</option><option value="5">PORT MAP</option><option selected="selected" value="6">SIGNAL</option><option value="7">A,B</option><option value="8">COMPONENT</option><option value="9">ieee</option><option value="10">A,B,C,D</option></select> </td></tr></tbody></table></div></div></div></div><input type="hidden" name="sesskey" value="YCsdzE0XyT" /><div class="submitbtns"><input type="submit" class="questionflagsavebutton btn btn-secondary" name="savingflags" value="保存这些标记的状态" /></div></div></form><div class="submitbtns"><a class="arrow_link mod_quiz-next-nav" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=1" title="下一页"><span class="arrow_text">下一页</span>&nbsp;<span class="arrow ">&#x25B6;&#xFE0E;</span></a></div></div>
+                    
+                    </div>
+                </section>
+                <section data-region="blocks-column" class="hidden-print">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">跳过 &lt;span id=&quot;mod_quiz_navblock_title&quot;&gt;测验导航&lt;/span&gt;</a>
+
+<aside id="mod_quiz_navblock"
+     class=" block block__fake  card m-b-1"
+     role="navigation"
+     data-block="_fake"
+          aria-labelledby="instance-0-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-0-header" class="card-title"><span id="mod_quiz_navblock_title">测验导航</span></h3>
+
+        <div class="card-text content">
+            <div class="qn_buttons clearfix multipages"><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton1" title="完成" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 1<span class="accesshide"> 此页 <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton2" title="完成" data-quiz-page="1" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=1#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 2<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton3" title="完成" data-quiz-page="2" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=2#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 3<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton4" title="完成" data-quiz-page="3" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=3#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 4<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton5" title="完成" data-quiz-page="4" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=4#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 5<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton6" title="完成" data-quiz-page="5" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=5#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 6<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton7" title="完成" data-quiz-page="6" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=6#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 7<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton8" title="完成" data-quiz-page="7" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=7#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 8<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton9" title="完成" data-quiz-page="8" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=8#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 9<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton10" title="完成" data-quiz-page="9" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=9#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 10<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton11" title="完成" data-quiz-page="10" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=10#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 11<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton12" title="完成" data-quiz-page="11" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=11#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 12<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton13" title="完成" data-quiz-page="12" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=12#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 13<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton14" title="完成" data-quiz-page="13" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=13#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 14<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary flagged" id="quiznavbutton15" title="完成" data-quiz-page="14" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=14#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 15<span class="accesshide"> <span class="flagstate">已标记</span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton16" title="完成" data-quiz-page="15" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=15#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 16<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton17" title="完成" data-quiz-page="16" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=16#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 17<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton18" title="完成" data-quiz-page="17" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=17#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 18<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton19" title="完成" data-quiz-page="18" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=18#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 19<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton20" title="完成" data-quiz-page="19" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=19#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 20<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton21" title="完成" data-quiz-page="20" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=20#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 21<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton22" title="完成" data-quiz-page="21" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=21#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 22<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton23" title="完成" data-quiz-page="22" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=22#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 23<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton24" title="完成" data-quiz-page="23" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=23#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 24<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton25" title="完成" data-quiz-page="24" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=24#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 25<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton26" title="完成" data-quiz-page="25" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=25#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 26<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton27" title="完成" data-quiz-page="26" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=26#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 27<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton28" title="完成" data-quiz-page="27" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=27#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 28<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton29" title="完成" data-quiz-page="28" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=28#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 29<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton30" title="完成" data-quiz-page="29" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=29#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 30<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton31" title="完成" data-quiz-page="30" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=30#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 31<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton32" title="完成" data-quiz-page="31" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=31#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 32<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton33" title="完成" data-quiz-page="32" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=32#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 33<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton34" title="完成" data-quiz-page="33" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=33#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 34<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton35" title="完成" data-quiz-page="34" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=34#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 35<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton36" title="完成" data-quiz-page="35" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=35#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 36<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton37" title="完成" data-quiz-page="36" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=36#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 37<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton38" title="完成" data-quiz-page="37" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=37#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 38<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton39" title="完成" data-quiz-page="38" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=38#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 39<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton40" title="完成" data-quiz-page="39" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=39#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 40<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton41" title="完成" data-quiz-page="40" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=40#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 41<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton42" title="完成" data-quiz-page="41" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=41#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 42<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton43" title="完成" data-quiz-page="42" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=42#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 43<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton44" title="完成" data-quiz-page="43" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=43#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 44<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton45" title="完成" data-quiz-page="44" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=44#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 45<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton46" title="完成" data-quiz-page="45" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=45#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 46<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton47" title="完成" data-quiz-page="46" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=46#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 47<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton48" title="完成" data-quiz-page="47" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=47#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 48<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton49" title="完成" data-quiz-page="48" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=48#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 49<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton50" title="完成" data-quiz-page="49" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=49#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 50<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton51" title="完成" data-quiz-page="50" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=50#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 51<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton52" title="完成" data-quiz-page="51" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=51#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 52<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton53" title="完成" data-quiz-page="52" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=52#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 53<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton54" title="完成" data-quiz-page="53" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=53#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 54<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton55" title="完成" data-quiz-page="54" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=54#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 55<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton56" title="完成" data-quiz-page="55" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=55#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 56<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton57" title="完成" data-quiz-page="56" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=56#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 57<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton58" title="完成" data-quiz-page="57" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=57#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 58<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton59" title="完成" data-quiz-page="58" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=58#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 59<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton60" title="完成" data-quiz-page="59" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=59#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 60<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton61" title="完成" data-quiz-page="60" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=60#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 61<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton62" title="完成" data-quiz-page="61" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=61#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 62<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton63" title="完成" data-quiz-page="62" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=62#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 63<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton64" title="完成" data-quiz-page="63" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=63#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 64<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton65" title="完成" data-quiz-page="64" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=64#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 65<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton66" title="完成" data-quiz-page="65" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=65#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 66<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton67" title="完成" data-quiz-page="66" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=66#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 67<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton68" title="完成" data-quiz-page="67" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=67#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 68<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton69" title="完成" data-quiz-page="68" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=68#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 69<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton70" title="完成" data-quiz-page="69" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=69#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 70<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton71" title="完成" data-quiz-page="70" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=70#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 71<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton72" title="完成" data-quiz-page="71" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=71#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 72<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton73" title="完成" data-quiz-page="72" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=72#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 73<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton74" title="完成" data-quiz-page="73" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=73#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 74<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton75" title="完成" data-quiz-page="74" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=74#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 75<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton76" title="完成" data-quiz-page="75" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=75#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 76<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton77" title="完成" data-quiz-page="76" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=76#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 77<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton78" title="完成" data-quiz-page="77" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=77#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 78<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton79" title="完成" data-quiz-page="78" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=78#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 79<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton80" title="完成" data-quiz-page="79" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=79#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 80<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton81" title="完成" data-quiz-page="80" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=80#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 81<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton82" title="完成" data-quiz-page="81" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=81#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 82<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton83" title="完成" data-quiz-page="82" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=82#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 83<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton84" title="完成" data-quiz-page="83" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=83#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 84<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton85" title="完成" data-quiz-page="84" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=84#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 85<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton86" title="完成" data-quiz-page="85" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=85#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 86<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton87" title="完成" data-quiz-page="86" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=86#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 87<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton88" title="完成" data-quiz-page="87" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=87#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 88<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton89" title="完成" data-quiz-page="88" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=88#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 89<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton90" title="完成" data-quiz-page="89" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=89#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 90<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton91" title="完成" data-quiz-page="90" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=90#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 91<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton92" title="完成" data-quiz-page="91" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=91#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 92<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton93" title="完成" data-quiz-page="92" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=92#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 93<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton94" title="完成" data-quiz-page="93" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=93#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 94<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton95" title="完成" data-quiz-page="94" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=94#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 95<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton96" title="完成" data-quiz-page="95" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=95#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 96<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton97" title="完成" data-quiz-page="96" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=96#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 97<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton98" title="完成" data-quiz-page="97" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=97#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 98<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton99" title="完成" data-quiz-page="98" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=98#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 99<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton100" title="完成" data-quiz-page="99" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=99#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 100<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton101" title="完成" data-quiz-page="100" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=100#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 101<span class="accesshide"> <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary" id="quiznavbutton102" title="完成" data-quiz-page="101" href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;page=101#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">题目</span> 102<span class="accesshide"> <span class="flagstate"></span></span></a></div><div class="othernav"><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;showall=1">所有题目显示在一页</a><a class="mod_quiz-next-nav" href="http://10.64.17.119/moodle/mod/quiz/view.php?id=60">结束回顾</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2" data-key="coursehome">
+                <div class="m-l-0">
+                        数字系统实验
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/user/index.php?id=2" data-key="participants">
+                <div class="m-l-0">
+                        成员
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/badges/view.php?type=2&amp;id=2" data-key="badgesview">
+                <div class="m-l-0">
+                        勋章
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/admin/tool/lp/coursecompetencies.php?courseid=2" data-key="2">
+                <div class="m-l-0">
+                        能力
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/grade/report/index.php?id=2" data-key="grades">
+                <div class="m-l-0">
+                        成绩
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-0" data-key="1">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">常规</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-1" data-key="23">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">疑难解答</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-2" data-key="5">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">教学资源</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-3" data-key="3">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第一次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-4" data-key="4">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第二次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-5" data-key="22">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第三次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-7" data-key="12">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第五次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-9" data-key="24">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第七次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="http://10.64.17.119/moodle/course/view.php?id=2#section-10" data-key="35">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第八次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-11" data-key="21">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">第九次课</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2#section-15" data-key="47">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <img class="icon smallicon" alt="" src="http://10.64.17.119/moodle/theme/image.php/boost/core/1516321044/i/folder" />
+                            </span>
+                            <span class="media-body">综合实验（倒车雷达）</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/my/" data-key="myhome">
+                <div class="m-l-0">
+                        个人主页
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/?redirect=0" data-key="home">
+                <div class="m-l-0">
+                        网站首页
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        日程管理
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/user/files.php" data-key="5">
+                <div class="m-l-0">
+                        私人文件
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    我的课程
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="http://10.64.17.119/moodle/course/view.php?id=2" data-key="2">
+                <div class="m-l-1">
+                        数字系统实验
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">您以<a href="http://10.64.17.119/moodle/user/profile.php?id=1361" title="查看个人资料">201608060208林金磊</a>登录 (<a href="http://10.64.17.119/moodle/login/logout.php?sesskey=YCsdzE0XyT">退出</a>)</div>
+        <div class="homelink"><a href="http://10.64.17.119/moodle/course/view.php?id=2">数字系统实验</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                                    <li><a href="#" title="语言">简体中文 ‎(zh_cn)‎</a></li>
+                                <ul class="list-unstyled m-l-1">
+                                                    <li><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;lang=en" title="English ‎(en)‎">English ‎(en)‎</a></li>
+                                                    <li><a href="http://10.64.17.119/moodle/mod/quiz/review.php?attempt=29168&amp;lang=zh_cn" title="简体中文 ‎(zh_cn)‎">简体中文 ‎(zh_cn)‎</a></li>
+                                </ul>
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://10.64.17.119/moodle/lib/requirejs.php/1516321068/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://10.64.17.119/moodle/lib/javascript.php/1516321068/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/video"], function(videojs) {
+videojs.options.flash.swf = "http://10.64.17.119/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("zh-CN",{
+ "Play": "播放",
+ "Pause": "暂停",
+ "Current Time": "当前时间",
+ "Duration Time": "时长",
+ "Remaining Time": "剩余时间",
+ "Stream Type": "媒体流类型",
+ "LIVE": "直播",
+ "Loaded": "加载完毕",
+ "Progress": "进度",
+ "Fullscreen": "全屏",
+ "Non-Fullscreen": "退出全屏",
+ "Mute": "静音",
+ "Unmute": "取消静音",
+ "Playback Rate": "播放码率",
+ "Subtitles": "字幕",
+ "subtitles off": "字幕关闭",
+ "Captions": "内嵌字幕",
+ "captions off": "内嵌字幕关闭",
+ "Chapters": "节目段落",
+ "You aborted the media playback": "视频播放被终止",
+ "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "视频因格式不支持或者服务器或网络的问题无法加载。",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+ "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+ "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。"
+});
+
+});;
+require(["media_videojs/Youtube"]);
+require(["media_videojs/loader"], function(amd) { amd.setUp(); });;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select5af24eb471dba14',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['core/yui'], function(Y) {
+    Y.use('moodle-core-formautosubmit', function() {
+        M.core.init_formautosubmit({
+            selectid: 'single_select5af24eb471dba16',
+            nothing: false
+        });
+    });
+});
+;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(3181, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"http:\/\/10.64.17.119\/moodle\/lib\/javascript.php\/1516321068\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u6700\u540e\u4fee\u6539","name":"\u540d\u79f0","error":"\u9519\u8bef","info":"\u4fe1\u606f","yes":"\u662f","no":"\u5426","cancel":"\u53d6\u6d88","changesmadereallygoaway":"\u60a8\u505a\u51fa\u4e86\u6539\u52a8\u3002\u60a8\u786e\u5b9a\u8981\u79bb\u5f00\u5e76\u653e\u5f03\u6240\u6709\u6539\u52a8\u5417\uff1f","morehelp":"\u66f4\u591a\u5e2e\u52a9","loadinghelp":"\u8f7d\u5165\u4e2d\u2026\u2026","confirm":"\u786e\u8ba4","areyousure":"\u4f60\u786e\u5b9a\u5417\uff1f","closebuttontitle":"\u5173\u95ed","unknownerror":"\u672b\u77e5\u9519\u8bef"},"repository":{"type":"\u7c7b\u578b","size":"\u5927\u5c0f","invalidjson":"\u65e0\u6548\u7684JSON\u5b57\u7b26\u4e32","nofilesattached":"\u6ca1\u6709\u9644\u4ef6","filepicker":"\u6587\u4ef6\u9009\u62e9\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6ca1\u6709\u53ef\u7528\u6587\u4ef6","norepositoriesavailable":"\u62b1\u6b49\uff0c\u60a8\u4f7f\u7528\u7684\u5bb9\u5668\u90fd\u4e0d\u80fd\u8fd4\u56de\u7b26\u5408\u9700\u8981\u7684\u683c\u5f0f\u7684\u6587\u4ef6\u3002","fileexistsdialogheader":"\u6587\u4ef6\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u60a8\u6b63\u7f16\u8f91\u7684\u6587\u672c\u7684\u9644\u4ef6\u4e2d\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6\u3002","fileexistsdialog_filemanager":"\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6","renameto":"\u91cd\u547d\u540d\u4e3a\u201c{$a}\u201d","referencesexist":"\u6709 {$a} \u4e2a\u522b\u540d\u6216\u5feb\u6377\u65b9\u5f0f\u5f15\u7528\u6b64\u6587\u4ef6","select":"\u9009\u62e9"},"admin":{"confirmdeletecomments":"\u60a8\u5c06\u5220\u9664\u8bc4\u8bba\uff0c\u786e\u5b9a\u5417\uff1f","confirmation":"\u786e\u8ba4"},"question":{"flagged":"\u5df2\u6807\u8bb0"},"quiz":{"functiondisabledbysecuremode":"\u8be5\u529f\u80fd\u76ee\u524d\u5df2\u505c\u7528","startattempt":"\u5f00\u59cb\u7b54\u9898","timesup":"\u65f6\u95f4\u5230\uff01"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random5af24eb471dba1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "http:\/\/10.64.17.119\/moodle\/question\/toggleflag.php", [{"src":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/unflagged","title":"\u6807\u8bb0\u6b64\u9898\u76ee\u4f9b\u5c06\u6765\u53c2\u8003","alt":"\u672a\u6807\u8bb0"},{"src":"http:\/\/10.64.17.119\/moodle\/theme\/image.php\/boost\/core\/1516321044\/i\/flagged","title":"\u5220\u9664\u6807\u8bb0","alt":"\u5df2\u6807\u8bb0"}], ["\u6807\u8bb0\u9898\u76ee","\u79fb\u9664\u6807\u8bb0"]);  M.util.js_complete('random5af24eb471dba1'); });
+ M.util.js_pending('random5af24eb471dba2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5af24eb471dba2'); });
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+ M.util.js_pending('random5af24eb471dba17'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_review_form(Y);  M.util.js_complete('random5af24eb471dba17'); });
+ M.util.js_pending('random5af24eb471dba18'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5af24eb471dba18'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+</body>
+</html>
